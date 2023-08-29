@@ -330,3 +330,30 @@ export function searcgCatalogValue(value, product) {
 
   pagination(searchFilterData)
 }
+
+
+// launch function
+export function launch(product) {
+  // output of product cards
+  pagination(product)
+
+  // colors filter function for sidebar
+  colorsFilter(product);
+
+  // product color selection function
+  const filteringColor = (e) => colorsFiltering(e, product)
+  el('#openColor').addEventListener("click", filteringColor)
+
+  // sizes filter function for sidebar
+  sizesFilter(product);
+
+  // product size selection function
+  const filteringSize = (e) => sizesFiltering(e, product)
+  el('#openSize').addEventListener("click", filteringSize)
+
+  // search function in catalog
+  el('.catalog__search-inp').addEventListener('input', (e) => {
+    let searchCatalogValue = e.target.value
+    searcgCatalogValue(searchCatalogValue, product)
+  })
+}

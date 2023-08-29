@@ -1,5 +1,5 @@
 //===========================================================
-import { filter, pagination, colorsFilter, colorsFiltering, sizesFilter, sizesFiltering, modalClose, redirectPage, searchFilter, searcgCatalogValue, menuBurger } from "./functions.js";
+import { filter, launch, modalClose, redirectPage, searchFilter, menuBurger } from "./functions.js";
 
 const el = (selector) => document.querySelector(selector);
 const all = (selectorAll) => document.querySelectorAll(selectorAll);
@@ -25,83 +25,22 @@ function outJson(json) {
 
   let productType = JSON.parse(localStorage.getItem("__product__"));
 
-  if (productType === 'shorts') {
-    // product selection by type
-    const shorts = filter(json, "productType", "shorts");
-
-    // output of product cards
-    pagination(shorts)
-
-    // colors filter function for sidebar
-    colorsFilter(shorts);
-
-    // product color selection function
-    const filteringColor = (e) => colorsFiltering(e, shorts)
-    el('#openColor').addEventListener("click", filteringColor)
-
-    // sizes filter function for sidebar
-    sizesFilter(shorts);
-
-    // product size selection function
-    const filteringSize = (e) => sizesFiltering(e, shorts)
-    el('#openSize').addEventListener("click", filteringSize)
-
-    // breadcrumbs
-    el('.breadcrumbs-end').innerText = 'shorts'
-
-    // search function in catalog
-    el('.catalog__search-inp').addEventListener('input', (e) => {
-      let searchCatalogValue = e.target.value
-      searcgCatalogValue(searchCatalogValue, shorts)
-    })
-
-  }
-
-  else if (productType === 'pants') {
-    const pants = filter(json, "productType", "pants");
-
-    pagination(pants)
-
-    colorsFilter(pants);
-
-    const filteringColor = (e) => colorsFiltering(e, pants)
-    el('#openColor').addEventListener("click", filteringColor)
-
-    sizesFilter(pants);
-
-    const filteringSize = (e) => sizesFiltering(e, pants)
-    el('#openSize').addEventListener("click", filteringSize)
-
-
-    // breadcrumbs
-    el('.breadcrumbs-end').innerText = 'pants'
-
-
-    // search function in catalog
-    el('.catalog__search-inp').addEventListener('input', (e) => {
-      let searchCatalogValue = e.target.value
-      searcgCatalogValue(searchCatalogValue, pants)
-    })
-
-  }
-
-  else { // functions get search global
-
-    pagination(productType)
-
-    colorsFilter(productType);
-
-    const filteringColor = (e) => colorsFiltering(e, productType)
-    el('#color').addEventListener("click", filteringColor)
-
-    sizesFilter(productType);
-
-    const filteringSize = (e) => sizesFiltering(e, productType)
-    el('#size').addEventListener("click", filteringSize)
-
-    // breadcrumbs
-    el('.breadcrumbs-end').innerText = 'search'
-
+  switch (productType) {
+    case 'shorts':
+      const shorts = filter(json, "productType", "shorts");
+      launch(shorts)
+      // breadcrumbs
+      el('.breadcrumbs-end').innerText = 'shorts'
+      break
+    case 'pants':
+      const pants = filter(json, "productType", "pants");
+      launch(pants)
+      el('.breadcrumbs-end').innerText = 'pants'
+      break
+    default:
+      launch(productType)
+      el('.breadcrumbs-end').innerText = 'search'
+      break
   }
 }
 

@@ -18,6 +18,7 @@ req('./public/product-list.json')
 
 let product = []
 
+// json processing function
 function outJson(json) {
 
   product = json
