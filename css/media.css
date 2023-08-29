@@ -288,17 +288,12 @@
   .close {
     top: 80px;
   }
-  .shop__main {
-    height: -moz-fit-content;
-    height: fit-content;
-  }
   .shop__card {
     grid-template-columns: 1fr 1fr 2fr;
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
   .shop__header {
-    height: 60px;
     padding: 0 20px;
   }
   .shop__close {
@@ -421,6 +416,7 @@
   }
   .shop__card {
     grid-template-columns: 1fr 1fr 5fr;
+    row-gap: 10px;
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -437,5 +433,19 @@
   }
   .shop__item {
     font-size: 10px;
+  }
+  .shop__add,
+  .shop__remove {
+    width: 20px;
+  }
+  .shop__remove {
+    height: 6px;
+  }
+  .shop__counter {
+    width: 30px;
+    height: 24px;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-right: 20px;
   }
 }

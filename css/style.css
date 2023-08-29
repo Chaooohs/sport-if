@@ -1001,6 +1001,7 @@ input[type=checkbox]:checked + label {
   background-color: #fff;
 }
 .shop__header {
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1013,7 +1014,7 @@ input[type=checkbox]:checked + label {
 }
 .shop__main {
   box-sizing: border-box;
-  padding: 90px 0;
+  padding: 60px 0;
 }
 .shop__ch {
   font-size: 24px;
@@ -1087,7 +1088,7 @@ input[type=checkbox]:checked + label {
   width: 60px;
   height: 40px;
   border: 1px solid #000;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 .shop__add {
   height: 40px;
