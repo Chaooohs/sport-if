@@ -44,17 +44,17 @@ export class RenderCard {
     const card = `
           <div class="shop__card sc-card" data-id="${this.id}">
             <button class="shop__del sc-del" data-del="del">
-              <iconify-icon icon="ei:close" style="color: #a04956;" width="32" height="32"></iconify-icon>
+              <img src="./img/svg/cloce.svg" alt="close">
             </button>
             <img class="shop__image sc-image" src="${this.productImage1}" alt="${this.productName}">
             <h1 class="modal__name-product shop__title r-title">${this.productName}</h1>
             <span class="modal__item shop__item sc-id">item #${this.id}</span>
             <button class="shop__remove sc-minus">
-              <iconify-icon icon="ic:baseline-minus" style="color: #a04956;" width="32" height="32" data-action="minus"></iconify-icon>
+              <img src="./img/svg/minus.svg" alt="close" data-action="minus">
             </button>
             <div class="shop__counter sc-counter">${this.productCounter}</div>
             <button class="shop__add sc-plus">
-              <iconify-icon icon="ic:baseline-plus" style="color: #a04956;" width="32" height="32" data-action="plus"></iconify-icon>
+              <img src="./img/svg/plus.svg" alt="close" data-action="plus">
             </button>
             <span class="shop__cost-text text_sm modal__price">cost:</span>
             <div class="shop__cost text_sm modal__price">
