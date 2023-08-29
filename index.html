@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportIf</title>
+  <link rel="stylesheet" href="./css/normalise.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+  <div class="page">
+    <header> <!-- header -->
+      <div class="wrap">
+        <div class="header">
+          <a href="./index.html" class="header__logo">
+            <img src="./img/svg/logo.svg" alt="logo">
+          </a>
+          <button class="header__shop sc-open" data-shop-open="open">
+            <iconify-icon icon="subway:bag" width="32" height="32" class="header__bag"></iconify-icon>
+            <span class="header__counter">0</span>
+          </button>
+          <nav class="header__nav" id="headerNav">
+            <span data-tab="shorts" class="header__nav-link" href="shorts.html">shorts</span>
+            <span data-tab="pants" class="header__nav-link" href="pants.html">pants</span>
+            <span data-tab="shirts" class="header__nav-link" href="#!">shirts</span>
+            <span data-tab="accessories" class="header__nav-link" href="#!">accessories</span>
+            <span data-tab="sale" class="header__nav-link" href="#!">sale</span>
+            <div class="header__search" id="headerSearch">
+              <button class="header__search-btn">
+                <img src="./img/svg/search.svg" alt="search">
+              </button>
+              <input class="header__search-inp" type="text" list="product" placeholder="search entire store here">
+              <datalist id="product" class="header__search-list">
+                <!-- adding options -->
+              </datalist>
+            </div>
+          </nav>
+          <div class="header__underlay"></div>
+          <div class="burger">
+            <span class="burger__line burger__line_one"></span>
+            <span class="burger__line burger__line_two"></span>
+            <span class="burger__line burger__line_three"></span>
+            <span class="burger__line burger__line_four"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section> <!-- block one -->
+      <div class="wrap">
+        <div class="one grid">
+          <div class="one__left">
+            <h2 class="text_xl">best selling <br> stretch shotrs</h2>
+            <p class="text_md">Get the perfect fit with 6 different inseam lengths.</p>
+            <button data-button="shorts" class="btn text_md">shop all shotrs</button>
+          </div>
+          <div class="one__right">
+            <img src="./img/fashion-models/image-1.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- block two -->
+      <div class="box">
+        <div class="wrap">
+          <div class="two">
+            <h3 class="text_lg">tgif, inlet, and marchal's collection</h3>
+            <h2 class="text_xl">now 40% off!</h2>
+            <div class="two__cards">
+              <!-- adding cards -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- block three -->
+      <div class="wrap">
+        <div class="three grid">
+          <div class="three__left">
+            <img src="./img/onter/pants.png" alt="img">
+          </div>
+          <div class="three__right">
+            <h2 class="text_xl">our bestselling pants</h2>
+            <p class="text_md">Our classic cargo pants are built to last and designed to exceed your expectations! From
+              Frequent Traveler
+              to Hatteras to Trinidad, we have the perfect fit for you!
+            </p>
+            <button data-button="pants" class="btn text_md">shop all pants</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- block four -->
+      <div class="box">
+        <div class="wrap">
+          <div class="four grid">
+            <div class="four__card">
+              <div class="four__image">
+                <img src="./img/fashion-models/image2.png" alt="img">
+              </div>
+              <p class="text_md">
+                Our entire Ecoths collection is on sale! Plus, for every Ecoths purchase we donate 3 meals to food banks
+                across the United States. We’re over 400,000 meals in now.
+              </p>
+              <a href="#!" class="btn text_md four__btn">shop ecoths sale</a>
+            </div>
+            <div class="four__card">
+              <div class="four__image">
+                <img src="./img/fashion-models/image3.png" alt="img">
+              </div>
+              <p class="text_md">
+                New from Old Ranch Brands, the Powell short sleeve print shirt! Look effortlessly sharp in this
+                lightweight cotton shirt with a classic shape and convenient features.
+              </p>
+              <a href="#!" class="btn text_md four__btn">shop powel short sleeve</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- block five -->
+      <div class="five">
+        <div class="wrap">
+          <div class="grid">
+            <h2 class="five__title text_xl text_white">sportif original pant</h2>
+            <p class="five__item text_md text_white">
+              Our classic nautical cargo pants are built to last and designed to exceed your expectations! Crafted from
+              our stretch twill blend that offers the comfort of cotton, the wrinkle resistance of polyester and the
+              mobility of Lycra®.
+            </p>
+            <button class="five__btn btn_red">shop sportif original pant</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- block six -->
+      <div class="wrap">
+        <div class="six">
+          <div class="six__content">
+            <h2 class="six__title text_xl text_white">stay in trend with sportif</h2>
+            <div class="six__cards">
+              <div class="six__card">
+                <div>
+                  <img src="./img/onter/belts.png" alt="belts">
+                </div>
+                <h4 class="card__title">Don't Forget a Belt!</h4>
+                <button class="six__btn btn_red">shop all belts</button>
+              </div>
+              <div class="six__card">
+                <div>
+                  <img src="./img/onter/swims.png" alt="belts">
+                </div>
+                <h4 class="card__title">Swim Trunk Styles on Sale!</h4>
+                <button class="six__btn btn_red">shop all swim trunks</button>
+              </div>
+              <div class="six__card">
+                <div>
+                  <img src="./img/onter/2104_sp_home_catalog.png" alt="belts">
+                </div>
+                <h4 class="card__title">Shop Newest Online Catalog</h4>
+                <button class="six__btn btn_red">shop newest catalog</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- block seven -->
+      <div class="wrap">
+        <div class="seven">
+          <div class="seven__content">
+            <h2 class="text_xl">family owned legacy</h2>
+            <p class="text_md">
+              We are proud to celebrate over 50 years of excellence as a family owned and operated business.
+            </p>
+            <a href="#!" class="btn text_md four__btn">about us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer> <!-- foooter -->
+      <div class="footer">
+        <div class="wrap">
+          <div class="footer__content">
+            <div class="footer__column">
+              <h2 class="footer__title text_white">ordering online</h2>
+              <ul>
+                <li><a href="#!" class="text_sm text_white">Account Login</a></li>
+                <li><a href="#!" class="text_sm text_white">Our Guarantee</a></li>
+                <li><a href="#!" class="text_sm text_white">Sportif Stretch Guide</a></li>
+                <li><a href="#!" class="text_sm text_white">Size Chart & Sizing Information</a></li>
+                <li><a href="#!" class="text_sm text_white">Hemming Information</a></li>
+                <li><a href="#!" class="text_sm text_white">Ordering & Payment</a></li>
+                <li><a href="#!" class="text_sm text_white">Shipping Information</a></li>
+                <li><a href="#!" class="text_sm text_white">Returns</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__title text_white">about sportif</h2>
+              <ul>
+                <li><a href="#!" class="text_sm text_white">COVID-19 Response</a></li>
+                <li><a href="#!" class="text_sm text_white">History</a></li>
+                <li><a href="#!" class="text_sm text_white">Legacy</a></li>
+                <li><a href="#!" class="text_sm text_white">Good Sam Program</a></li>
+                <li><a href="#!" class="text_sm text_white">Privacy & Security</a></li>
+                <li><a href="#!" class="text_sm text_white">Terms & Conditions</a></li>
+                <li><a href="#!" class="text_sm text_white">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__title text_white">quick links</h2>
+              <ul>
+                <li><a href="#!" class="text_sm text_white">FAQs</a></li>
+                <li><a href="#!" class="text_sm text_white">Shop Online Catalog</a></li>
+                <li><a href="#!" class="text_sm text_white">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__title text_white">get to know us</h2>
+              <ul>
+                <li class="footer__margin">
+                  <a href="#!" class="text_sm text_white">
+                    Sign up for our weekly newsletter and get a 10% off coupon by email for your first order!
+                  </a>
+                </li>
+                <li><a href="#!" class="text_sm text_white">Sign Up for Our Newsletter:</a></li>
+              </ul>
+              <form>
+                <div class="footer__form">
+                  <input type="email" class="footer__input" placeholder="email address">
+                  <input type="submit" value="subscribe" class="footer__btn btn_red">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="wrap"><span class="copy__text">©2021 Sportif Mailorder. All Rights Reserved.</span></div>
+    </div>
+    <div class="arrow-up">
+      <a href="#">
+        <img src="./img/svg/arrow-up.svg" alt="">
+      </a>
+    </div>
+    <section> <!-- card modal -->
+      <div class="modal hide">
+        <div class="modal__content sc-card">
+          <button class="close md-close">
+            <iconify-icon icon="ei:close" style="color: #a04956;" width="48" height="48"></iconify-icon>
+          </button>
+          <div class="grid">
+            <div class="modal__left">
+              <img class="modal__image sc-image" src="" alt="product">
+              <div class="modal__block-image">
+                <img class="modal__img-front" src="" alt="front">
+                <img class="modal__img-back" src="" alt="back">
+              </div>
+            </div>
+            <div class="modal__right">
+              <div class="modal__chapter">
+                <h1 class="modal__name-product sc-title">ssss</h1>
+                <span class="modal__item">item #</span>
+                <span class="modal__id sc-id"></span>
+              </div>
+              <div class="card__stars modal__stars">
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+              </div>
+              <div class="modal__as">As low as</div>
+              <div class="modal__cost">
+                <span>&#8372;</span>
+                <span class="modal__price sc-price"></span>
+              </div>
+              <div>
+                <span class="modal__size">size</span>
+                <div class="modal__size-block"></div>
+              </div>
+              <div class="modal__buttons">
+                <button class="modal__bag sc-add">
+                  <iconify-icon icon="subway:bag" width="21" height="21"></iconify-icon>
+                  add to bag
+                </button>
+                <button class="modal__wish">
+                  <iconify-icon icon="mdi:heart" width="30" height="30"></iconify-icon>
+                  add to wishlist
+                </button>
+              </div>
+              <div class="modal__social">
+                <a href="https://uk-ua.facebook.com/">
+                  <img src="./img/svg/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://twitter.com/?lang=uk">
+                  <img src="./img/svg/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.pinterest.com/">
+                  <img src="./img/svg/pinterest.svg" alt="pinterest">
+                </a>
+                <a href="#">
+                  <img src="./img/svg/link.svg" alt="link">
+                </a>
+              </div>
+              <div class="modal__copy">
+                <h2 class="modal__worry">- Worry Free Shopping -</h2>
+                <div class="modal__bellow">
+                  <div class="modal__copy-delivery">
+                    <img src="./img/svg/free-delivery.svg" alt="img">
+                    <span class="modal__copy-text">free priority shipping on ofders $99+*</span>
+                  </div>
+                  <div class="modal__copy-exchange">
+                    <img src="./img/svg/exchange.svg" alt="img">
+                    <span class="modal__copy-text">free returns & exchanges*</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- shopping cart modal -->
+      <div class="modal shop hide">
+        <div class="shop__content modal__content">
+          <header>
+            <div class="shop__header">
+              <h1 class="aside__title shop__ch">
+                shopping cart 
+                <span class="shop__empty">is empty</span>
+              </h1>
+              <button class="shop__close sc-close">
+                <iconify-icon icon="ei:close" style="color: #a04956;" width="32" height="32"  data-close=""></iconify-icon>
+              </button>
+            </div>
+          </header>
+          <main>
+            <div class="wrap">
+              <div class="shop__main r-main">
+                <!-- adding cards to shop cart -->
+              </div>
+            </div>
+          </main>
+          <footer>
+            <div class="shop__footer">
+              <button class="shop__pay btn_red">
+                pay: &nbsp;
+                <span class="shop__total-price sc-total-price"></span>
+                &nbsp; &#8372;
+              </button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="./js/index.js" type="module"></script>
+  <script src="./js/shopcart.js" type="module"></script>
+</body>
+
+</html>

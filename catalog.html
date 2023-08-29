@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="./css/normalise.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+  <div class="page">
+    <header> <!-- header -->
+      <div class="wrap">
+        <div class="header">
+          <a href="./index.html" class="header__logo">
+            <img src="./img/svg/logo.svg" alt="logo">
+          </a>
+          <button class="header__shop sc-open" data-shop-open="open">
+            <iconify-icon icon="subway:bag" width="32" height="32" class="header__bag"></iconify-icon>
+            <span class="header__counter">0</span>
+          </button>
+          <div class="header__nav" id="headerNav">
+            <span data-tab="shorts" class="header__nav-link" href="shorts.html">shorts</span>
+            <span data-tab="pants" class="header__nav-link" href="pants.html">pants</span>
+            <span data-tab="shirts" class="header__nav-link" href="#!">shirts</span>
+            <span data-tab="accessories" class="header__nav-link" href="#!">accessories</span>
+            <span data-tab="sale" class="header__nav-link" href="#!">sale</span>
+            <div class="header__search" id="headerSearch">
+              <button class="header__search-btn">
+                <img src="./img/svg/search.svg" alt="search">
+              </button>
+              <input class="header__search-inp" type="text" list="product" placeholder="search entire store here">
+              <datalist id="product" class="header__search-list">
+                <!-- adding options -->
+              </datalist>
+            </div>
+          </div>
+          <div class="header__underlay"></div>
+          <div class="burger">
+            <span class="burger__line burger__line_one"></span>
+            <span class="burger__line burger__line_two"></span>
+            <span class="burger__line burger__line_three"></span>
+            <span class="burger__line burger__line_four"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrap"> <!-- catalog breadcrumbs -->
+      <div class="catalog__up">
+        <div class="breadcrumbs">
+          <ul>
+            <img src="./img/svg/home.svg" alt="home" class="breadcrumbs__home">
+            <li>
+              <a href="./index.html" class="breadcrumbs-text">
+                <span>home</span>
+              </a>
+            </li>
+            <img src="./img/svg/right-arrow.svg" alt="arrow" class="breadcrumbs__arrow">
+            <li class="breadcrumbs-text">
+              <span class="breadcrumbs-end">
+                <!-- adding text -->
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="store__search">
+          <input type="text" class="catalog__input catalog__search-inp" placeholder="search">
+        </div>
+      </div>
+    </div>
+    <div class="content"> <!-- store content -->
+      <aside>
+        <div class="aside">
+
+          <div class="aside__box">
+            <div class="aside__chapter">
+              <h3 class="aside__title">size</h3>
+              <img src="./img/svg/up-arrow.svg" alt="arrow" class="aside__arrow">
+            </div>
+            <div class="aside__list" id="openSize">
+              <button class="square-all">all</button>
+              <div class="aside__flex" id="size">
+                <!-- adding buttons -->
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__box">
+            <div class="aside__chapter">
+              <h3 class="aside__title">color</h3>
+              <img src="./img/svg/up-arrow.svg" alt="arrow" class="aside__arrow">
+            </div>
+            <div class="aside__list" id="openColor">
+              <button class="square-all">all</button>
+              <div class="aside__flex" id="color">
+                <!-- adding buttons -->
+              </div>
+            </div>
+          </div>
+
+          <div class="aside__box">
+            <div class="aside__chapter">
+              <h3 class="aside__title">inseam</h3>
+              <img src="./img/svg/up-arrow.svg" alt="arrow" class="aside__arrow">
+            </div>
+            <div class="aside__content">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
+          </div>
+          <div class="aside__box">
+            <div class="aside__chapter">
+              <h3 class="aside__title">sustainable fabric</h3>
+              <img src="./img/svg/up-arrow.svg" alt="arrow" class="aside__arrow">
+            </div>
+            <div class="aside__content">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
+          </div>
+          <div class="aside__box">
+            <div class="aside__chapter">
+              <h3 class="aside__title">collections</h3>
+              <img src="./img/svg/up-arrow.svg" alt="arrow" class="aside__arrow">
+            </div>
+            <div class="aside__content">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+              <input type="checkbox">
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="main">
+          <div class="hide" id="shorts" data-content="shorts">
+            <div class="st-page st-shorts">
+              <!-- adding cards -->
+            </div>
+          </div>
+          <div class="hide" id="pants" data-content="pants">
+            <div class="st-page st-pants">
+              <!-- adding cards -->
+            </div>
+          </div>
+          <div class="hide" id="hirts" data-content="hirts">
+            <div class="st-page st-hirts">
+              <h2>hirts</h2>
+              <!-- adding cards -->
+            </div>
+          </div>
+          <div class="hide" id="accessories" data-content="accessories">
+            <div class="st-page st-accessories">
+              <h2>accessories</h2>
+              <!-- adding cards -->
+            </div>
+          </div>
+          <div class="hide" id="sale" data-content="sale">
+            <div class="st-page st-sale">
+              <h2>sale</h2>
+              <!-- adding cards -->
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <!-- adding pagination -->
+        </div>
+      </main>
+    </div>
+    <footer> <!-- foooter -->
+      <div class="footer">
+        <div class="wrap">
+          <div class="footer__content">
+            <div class="footer__column">
+              <h2 class="footer__title text_white">ordering online</h2>
+              <ul>
+                <li><a href="#!" class="text_sm text_white">Account Login</a></li>
+                <li><a href="#!" class="text_sm text_white">Our Guarantee</a></li>
+                <li><a href="#!" class="text_sm text_white">Sportif Stretch Guide</a></li>
+                <li><a href="#!" class="text_sm text_white">Size Chart & Sizing Information</a></li>
+                <li><a href="#!" class="text_sm text_white">Hemming Information</a></li>
+                <li><a href="#!" class="text_sm text_white">Ordering & Payment</a></li>
+                <li><a href="#!" class="text_sm text_white">Shipping Information</a></li>
+                <li><a href="#!" class="text_sm text_white">Returns</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__title text_white">about sportif</h2>
+              <ul>
+                <li><a href="#!" class="text_sm text_white">COVID-19 Response</a></li>
+                <li><a href="#!" class="text_sm text_white">History</a></li>
+                <li><a href="#!" class="text_sm text_white">Legacy</a></li>
+                <li><a href="#!" class="text_sm text_white">Good Sam Program</a></li>
+                <li><a href="#!" class="text_sm text_white">Privacy & Security</a></li>
+                <li><a href="#!" class="text_sm text_white">Terms & Conditions</a></li>
+                <li><a href="#!" class="text_sm text_white">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__title text_white">quick links</h2>
+              <ul>
+                <li><a href="#!" class="text_sm text_white">FAQs</a></li>
+                <li><a href="#!" class="text_sm text_white">Shop Online Catalog</a></li>
+                <li><a href="#!" class="text_sm text_white">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h2 class="footer__title text_white">get to know us</h2>
+              <ul>
+                <li class="footer__margin">
+                  <a href="#!" class="text_sm text_white">
+                    Sign up for our weekly newsletter and get a 10% off coupon by email for your first order!
+                  </a>
+                </li>
+                <li><a href="#!" class="text_sm text_white">Sign Up for Our Newsletter:</a></li>
+              </ul>
+              <form>
+                <div class="footer__form">
+                  <input type="email" class="footer__input" placeholder="email address">
+                  <input type="submit" value="subscribe" class="footer__btn btn_red">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="wrap"><span class="copy__text">©2021 Sportif Mailorder. All Rights Reserved.</span></div>
+    </div>
+    <div class="arrow-up">
+      <a href="#">
+        <img src="./img/svg/arrow-up.svg" alt="arrow">
+      </a>
+    </div>
+    <section> <!-- card modal -->
+      <div class="modal hide">
+        <div class="modal__content sc-card">
+          <button class="close md-close">
+            <iconify-icon icon="ei:close" style="color: #a04956;" width="48" height="48"></iconify-icon>
+          </button>
+          <div class="grid">
+            <div class="modal__left">
+              <img class="modal__image sc-image" src="" alt="product">
+              <div class="modal__block-image">
+                <img class="modal__img-front" src="" alt="front">
+                <img class="modal__img-back" src="" alt="back">
+              </div>
+            </div>
+            <div class="modal__right">
+              <div class="modal__chapter">
+                <h1 class="modal__name-product sc-title">ssss</h1>
+                <span class="modal__item">item #</span>
+                <span class="modal__id sc-id"></span>
+              </div>
+              <div class="card__stars modal__stars">
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+              </div>
+              <div class="modal__as">As low as</div>
+              <div class="modal__cost">
+                <span>&#8372;</span>
+                <span class="modal__price sc-price"></span>
+              </div>
+              <div>
+                <span class="modal__size">size</span>
+                <div class="modal__size-block"></div>
+              </div>
+              <div class="modal__buttons">
+                <button class="modal__bag sc-add">
+                  <iconify-icon icon="subway:bag" width="21" height="21"></iconify-icon>
+                  add to bag
+                </button>
+                <button class="modal__wish">
+                  <iconify-icon icon="mdi:heart" width="30" height="30"></iconify-icon>
+                  add to wishlist
+                </button>
+              </div>
+              <div class="modal__social">
+                <a href="https://uk-ua.facebook.com/">
+                  <img src="./img/svg/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://twitter.com/?lang=uk">
+                  <img src="./img/svg/twitter.svg" alt="twitter">
+                </a>
+                <a href="https://www.pinterest.com/">
+                  <img src="./img/svg/pinterest.svg" alt="pinterest">
+                </a>
+                <a href="#">
+                  <img src="./img/svg/link.svg" alt="link">
+                </a>
+              </div>
+              <div class="modal__copy">
+                <h2 class="modal__worry">- Worry Free Shopping -</h2>
+                <div class="modal__bellow">
+                  <div class="modal__copy-delivery">
+                    <img src="./img/svg/free-delivery.svg" alt="img">
+                    <span class="modal__copy-text">free priority shipping on ofders $99+*</span>
+                  </div>
+                  <div class="modal__copy-exchange">
+                    <img src="./img/svg/exchange.svg" alt="img">
+                    <span class="modal__copy-text">free returns & exchanges*</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <!-- shopping cart modal -->
+      <div class="modal shop hide">
+        <div class="shop__content modal__content">
+          <header>
+            <div class="shop__header">
+              <h1 class="aside__title shop__ch">
+                shopping cart
+                <span class="shop__empty">is empty</span>
+              </h1>
+              <button class="shop__close sc-close">
+                <iconify-icon icon="ei:close" style="color: #a04956;" width="32" height="32"
+                  data-close=""></iconify-icon>
+              </button>
+            </div>
+          </header>
+          <main>
+            <div class="wrap">
+              <div class="shop__main r-main">
+                <!-- adding cards to shop cart -->
+              </div>
+            </div>
+          </main>
+          <footer>
+            <div class="shop__footer">
+              <button class="shop__pay btn_red">
+                pay: &nbsp;
+                <span class="shop__total-price sc-total-price"></span>
+                &nbsp; &#8372;
+              </button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="./js/catalog.js" type="module"></script>
+  <script src="./js/shopcart.js" type="module"></script>
+</body>
+
+</html>
