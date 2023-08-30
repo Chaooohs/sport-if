@@ -25,6 +25,7 @@ function outJson(json) {
 
   let productType = JSON.parse(localStorage.getItem("__product__"));
 
+  console.log(productType)
   switch (productType) {
     case 'shorts':
       const shorts = filter(json, "productType", "shorts");
@@ -36,6 +37,16 @@ function outJson(json) {
       const pants = filter(json, "productType", "pants");
       launch(pants)
       el('.breadcrumbs-end').innerText = 'pants'
+      break
+    case 'shirts':
+      const shirts = filter(json, "productType", "shirts");
+      launch(shirts)
+      el('.breadcrumbs-end').innerText = 'shirts'
+      break
+    case 'accessories':
+      const accessories = filter(json, "productType", "accessories");
+      launch(accessories)
+      el('.breadcrumbs-end').innerText = 'accessories'
       break
     default:
       launch(productType)
@@ -50,6 +61,12 @@ el('[data-tab="shorts"]').addEventListener('click', (e) => {
   redirectPage(e.target.dataset.tab)
 })
 el('[data-tab="pants"]').addEventListener('click', (e) => {
+  redirectPage(e.target.dataset.tab)
+})
+el('[data-tab="shirts"]').addEventListener('click', (e) => {
+  redirectPage(e.target.dataset.tab)
+})
+el('[data-tab="accessories"]').addEventListener('click', (e) => {
   redirectPage(e.target.dataset.tab)
 })
 

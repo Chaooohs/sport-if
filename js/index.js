@@ -65,6 +65,12 @@ el('[data-tab="shorts"]').addEventListener('click', (e) => {
 el('[data-tab="pants"]').addEventListener('click', (e) => {
   redirectPage(e.target.dataset.tab)
 })
+el('[data-tab="shirts"]').addEventListener('click', (e) => {
+  redirectPage(e.target.dataset.tab)
+})
+el('[data-tab="accessories"]').addEventListener('click', (e) => {
+  redirectPage(e.target.dataset.tab)
+})
 
 
 // search set function global
