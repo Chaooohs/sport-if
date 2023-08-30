@@ -3,7 +3,7 @@ import { statusShopCart, calcTotalCostSC, titleShopCart, modalShopClose, calcCos
 import { RenderCard } from "./constructor.js";
 
 const el = (selector) => document.querySelector(selector);
-const mainElement = el(".shop__main");
+const mainElement = el(".sc__main");
 
 
 // outputting cards to the shop cart
@@ -83,10 +83,10 @@ window.addEventListener("click", function (e) {
 
 // opening a shopping cart
 el('.sc-open').addEventListener('click', function () {
-  el('.shop').classList.remove('hide')
+  el('.sc').classList.remove('hide')
   el('body').classList.add('active')
 })
 
 
 // close modal window function
-el('.shop').addEventListener('click', modalShopClose)
+el('.sc').addEventListener('click', modalShopClose)

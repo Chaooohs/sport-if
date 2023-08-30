@@ -11,10 +11,6 @@ $white: #fff;
 @media (max-width: 992px) {
 
   // common _______________________
-  .wrap {
-    padding: 0 30px;
-  }
-
   .text_xl {
     font-size: 45px;
   }
@@ -187,10 +183,6 @@ $white: #fff;
     column-gap: 55px;
   }
 
-  .content {
-    grid-template-columns: 1fr;
-  }
-
   // footer _______________________________
   .scroll-up-btn {
     width: 68px;
@@ -234,48 +226,48 @@ $white: #fff;
 
   // shop cart___________________
 
-  .shop__content {
+  .sc__content {
     padding: 0;
   }
 
-  .shop__header {
+  .sc__header {
     position: fixed;
     top: 0;
   }
 
-  .shop__main {
+  .sc__main {
     overflow: hidden;
   }
 
-  .shop__remove {
+  .sc__counter-remove {
     grid-column: 3/4;
   }
 
-  .shop__counter {
+  .sc__counter {
     grid-column: 4/5;
   }
 
-  .shop__add {
+  .sc__counter-add {
     grid-column: 5/6;
   }
 
-  .shop__cost {
+  .sc__product-price {
     grid-column: 6/9;
     justify-self: flex-end;
   }
 
-  .shop__title {
+  .sc__product-name {
     grid-column: 3/9;
     align-self: center;
   }
 
-  .shop__footer {
+  .sc__footer {
     position: static;
     height: 200px;
     align-items: baseline;
   }
 
-  .shop__pay {
+  .sc__pay {
     margin: 40px auto;
   }
 }
@@ -352,11 +344,11 @@ $white: #fff;
     padding: 20px;
   }
 
-  .catalog__input {
+  .catalog__search-inp {
     font-size: 46px;
   }
 
-  .catalog__up {
+  .tree {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -387,25 +379,25 @@ $white: #fff;
 
   // shop cart _________________________
 
-  .shop__card {
+  .sc__card {
     grid-template-columns: 1fr 1fr 2fr;
     column-gap: 20px;
   }
 
-  .shop__header {
+  .sc__header {
     padding: 0 20px;
   }
 
-  .shop__close {
+  .sc__close {
     right: 0;
   }
 
-  .shop__image {
+  .sc_product-image {
     grid-column: 1;
     justify-self: center;
   }
 
-  .shop__remove {
+  .sc__counter-remove {
     height: 12px;
     grid-row: 2/3;
     grid-column: 3/4;
@@ -413,15 +405,19 @@ $white: #fff;
     align-self: flex-end;
   }
 
-  .shop__counter {
+  .sc__counter {
     grid-row: 2/3;
     grid-column: 3/4;
     justify-self: flex-end;
     align-self: center;
     margin-right: 40px;
+
+    width: 40px;
+    height: 28px;
+    font-size: 18px;
   }
 
-  .shop__add {
+  .sc__counter-add {
     height: 20px;
     grid-row: 1/2;
     grid-column: 3/4;
@@ -429,13 +425,7 @@ $white: #fff;
     align-self: flex-end;
   }
 
-  .shop__counter {
-    width: 40px;
-    height: 28px;
-    font-size: 18px;
-  }
-
-  .shop__cost-text {
+  .sc__cost {
     grid-row: 2/3;
     grid-column: 2/3;
     justify-self: flex-end;
@@ -443,7 +433,7 @@ $white: #fff;
     font-size: 22px;
   }
 
-  .shop__cost {
+  .sc__product-price {
     grid-row: 2/3;
     grid-column: 3/4;
     justify-self: flex-start;
@@ -451,19 +441,19 @@ $white: #fff;
     font-size: 22px;
   }
 
-  .shop__item {
+  .sc__product-id {
     grid-column: 2/4;
     justify-self: flex-start;
   }
 
-  .shop__title {
+  .sc__product-name {
     grid-row: 1;
     grid-column: 2/4;
     font-size: 24px;
     margin: 0;
   }
 
-  .shop__del {
+  .sc__del-btn {
     width: 20px;
     grid-row: 1;
     grid-column: 3/4;
@@ -524,7 +514,7 @@ $white: #fff;
   }
 
   // catalog ________________________
-  .content {
+  .catalog {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -551,44 +541,44 @@ $white: #fff;
 
   // shop cart __________________________
 
-  .shop__content {
+  .sc__content {
     padding: 0;
   }
 
-  .shop__card {
+  .sc__card {
     grid-template-columns: 1fr 1fr 5fr;
     row-gap: 10px;
     column-gap: 10px;
   }
 
-  .shop__ch {
+  .sc__ch {
     font-size: 18px;
   }
 
-  .shop__footer {
+  .sc__footer {
     justify-content: center;
   }
 
-  .shop__title,
-  .shop__cost,
-  .shop__cost-text {
+  .sc__product-name,
+  .sc__product-price,
+  .sc__cost {
     font-size: 16px;
   }
 
-  .shop__item {
+  .sc__product-id {
     font-size: 10px;
   }
 
-  .shop__add,
-  .shop__remove {
+  .sc__counter-add,
+  .sc__counter-remove {
     width: 20px;
   }
 
-  .shop__remove {
+  .sc__counter-remove {
     height: 6px;
   }
 
-  .shop__counter {
+  .sc__counter {
     width: 30px;
     height: 24px;
     font-size: 12px;

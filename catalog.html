@@ -13,7 +13,7 @@
 
 <body>
   <div class="page">
-    <header> <!-- header -->
+    <header>
       <div class="wrap">
         <div class="header">
           <a href="./index.html" class="header__logo">
@@ -49,119 +49,91 @@
         </div>
       </div>
     </header>
-    <div class="wrap"> <!-- catalog breadcrumbs -->
-      <div class="catalog__up">
-        <div class="breadcrumbs">
-          <ul>
-            <img src="./img/svg/home.svg" alt="home" class="breadcrumbs__home">
-            <li>
-              <a href="./index.html" class="breadcrumbs-text">
-                <span>home</span>
-              </a>
-            </li>
-            <img src="./img/svg/right-arrow.svg" alt="arrow" class="breadcrumbs__arrow">
-            <li class="breadcrumbs-text">
-              <span class="breadcrumbs-end">
-                <!-- adding text -->
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="store__search">
-          <input type="text" class="catalog__input catalog__search-inp" placeholder="search">
+    <div class="tree-outer">
+      <div class="wrap">
+        <div class="tree">
+          <div class="breadcrumbs">
+            <ul>
+              <img src="./img/svg/home.svg" alt="home" class="breadcrumbs__home">
+              <li>
+                <a href="./index.html" class="breadcrumbs-text">
+                  <span>home</span>
+                </a>
+              </li>
+              <img src="./img/svg/right-arrow.svg" alt="arrow" class="breadcrumbs__arrow">
+              <li class="breadcrumbs-text">
+                <span class="breadcrumbs-end">
+                  <!-- adding text -->
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog__search">
+            <input type="text" class="catalog__search-inp" placeholder="search">
+          </div>
         </div>
       </div>
     </div>
-    <div class="content"> <!-- store content -->
-      <aside>
-        <div class="filter">
-
-          <div class="filter__box">
-            <div class="filter__header">
-              <h3 class="filter__heading">size</h3>
-              <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
-            </div>
-            <div class="filter__content" id="openSize">
-              <button class="filter__subfilter_all">all</button>
-              <div class="filter__list" id="sizeFilterList">
-                <!-- adding buttons -->
+    <div class="catalog-outer">
+      <div class="wrap">
+        <div class="catalog">
+          <div class="filter">
+            <div class="filter__box">
+              <div class="filter__header">
+                <h3 class="filter__heading">size</h3>
+                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+              </div>
+              <div class="filter__content" id="openSize">
+                <button class="filter__subfilter_all">all</button>
+                <div class="filter__list" id="sizeFilterList">
+                  <!-- adding buttons -->
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="filter__box">
-            <div class="filter__header">
-              <h3 class="filter__heading">color</h3>
-              <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
-            </div>
-            <div class="filter__content" id="openColor">
-              <button class="filter__subfilter_all">all</button>
-              <div class="filter__list" id="colorFilterList">
-                <!-- adding buttons -->
+            <div class="filter__box">
+              <div class="filter__header">
+                <h3 class="filter__heading">color</h3>
+                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+              </div>
+              <div class="filter__content" id="openColor">
+                <button class="filter__subfilter_all">all</button>
+                <div class="filter__list" id="colorFilterList">
+                  <!-- adding buttons -->
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="filter__box">
-            <div class="filter__header">
-              <h3 class="filter__heading">inseam</h3>
-              <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+            <div class="filter__box">
+              <div class="filter__header">
+                <h3 class="filter__heading">inseam</h3>
+                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+              </div>
+              <div class="filter__content"></div>
             </div>
-            <div class="filter__content"></div>
-          </div>
-          <div class="filter__box">
-            <div class="filter__header">
-              <h3 class="filter__heading">sustainable fabric</h3>
-              <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+            <div class="filter__box">
+              <div class="filter__header">
+                <h3 class="filter__heading">sustainable fabric</h3>
+                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+              </div>
+              <div class="filter__content"></div>
             </div>
-            <div class="filter__content"></div>
-          </div>
-          <div class="filter__box">
-            <div class="filter__header">
-              <h3 class="filter__heading">collections</h3>
-              <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+            <div class="filter__box">
+              <div class="filter__header">
+                <h3 class="filter__heading">collections</h3>
+                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+              </div>
+              <div class="filter__content"></div>
             </div>
-            <div class="filter__content"></div>
+          </div>
+          <div class="product-list">
+            <!-- adding product -->
+          </div>
+          <div class="product-pagination">
+            <!-- adding pagination -->
           </div>
         </div>
-      </aside>
-      <main>
-        <div class="main">
-          <div class="hide" id="shorts" data-content="shorts">
-            <div class="st-page st-shorts">
-              <!-- adding cards -->
-            </div>
-          </div>
-          <div class="hide" id="pants" data-content="pants">
-            <div class="st-page st-pants">
-              <!-- adding cards -->
-            </div>
-          </div>
-          <div class="hide" id="hirts" data-content="hirts">
-            <div class="st-page st-hirts">
-              <h2>hirts</h2>
-              <!-- adding cards -->
-            </div>
-          </div>
-          <div class="hide" id="accessories" data-content="accessories">
-            <div class="st-page st-accessories">
-              <h2>accessories</h2>
-              <!-- adding cards -->
-            </div>
-          </div>
-          <div class="hide" id="sale" data-content="sale">
-            <div class="st-page st-sale">
-              <h2>sale</h2>
-              <!-- adding cards -->
-            </div>
-          </div>
-        </div>
-        <div class="pagination">
-          <!-- adding pagination -->
-        </div>
-      </main>
+      </div>
     </div>
-    <footer> <!-- foooter -->
+    <footer>
       <div class="footer">
         <div class="wrap">
           <div class="footer__content">
@@ -308,31 +280,31 @@
       </div>
     </section>
     <section> <!-- shopping cart modal -->
-      <div class="modal shop hide">
-        <div class="shop__content modal__content">
+      <div class="modal sc hide">
+        <div class="sc__content modal__content">
           <header>
-            <div class="shop__header">
-              <h1 class="aside__title shop__ch">
+            <div class="sc__header">
+              <h1 class="filter__heading sc__ch">
                 shopping cart
-                <span class="shop__empty">is empty</span>
+                <span class="sc__empty">is empty</span>
               </h1>
-              <button class="shop__close sc-close">
+              <button class="sc__close">
                 <img src="./img/svg/cloce.svg" alt="close">
               </button>
             </div>
           </header>
           <main>
             <div class="wrap">
-              <div class="shop__main r-main">
+              <div class="sc__main">
                 <!-- adding cards to shop cart -->
               </div>
             </div>
           </main>
           <footer>
-            <div class="shop__footer">
-              <button class="shop__pay btn_red">
+            <div class="sc__footer">
+              <button class="sc__pay btn_red">
                 pay: &nbsp;
-                <span class="shop__total-price sc-total-price"></span>
+                <span class="sc__total-price"></span>
                 &nbsp; &#8372;
               </button>
             </div>

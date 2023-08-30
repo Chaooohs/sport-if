@@ -87,7 +87,7 @@ input[type="checkbox"]:checked+label {
 }
 
 .wrap {
-  padding: 0 4.2%;
+  padding: 0 60px;
   box-sizing: border-box;
 }
 
@@ -191,64 +191,6 @@ input[type="checkbox"]:checked+label {
   border: 1px solid $black;
 }
 
-.card {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-auto-flow: row;
-  align-items: center;
-  row-gap: 5px;
-
-
-  box-sizing: border-box;
-  padding: 30px 60px;
-  background-color: $white;
-
-  &__image {
-    cursor: pointer;
-  }
-
-  &__title {
-    align-self: flex-start;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
-    text-align: center;
-    color: $CarbonColor;
-  }
-
-  &__stars {
-    display: flex;
-    justify-content: space-between;
-    justify-self: center;
-    width: 150px;
-  }
-
-  &__stars img {
-    width: 24px;
-  }
-
-  &__spans {
-    justify-self: center;
-  }
-
-  &__as {
-    font-weight: 200;
-    margin-right: 4px;
-  }
-
-  &__price {
-    font-weight: 500;
-  }
-
-  &__btn {
-    column-gap: 6px;
-  }
-
-  &__btn img {
-    width: 21px;
-  }
-}
-
 .hide {
   display: none;
 }
@@ -282,45 +224,6 @@ input[type="checkbox"]:checked+label {
   font-size: 24px;
   font-weight: 500;
   color: $black;
-}
-
-.pagination {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0;
-  list-style-type: none;
-  margin-top: 50px;
-
-
-  &__item {
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: Oswald;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 180.804%;
-    color: #A04955;
-    border: 1px solid #A04955;
-    background: #F1F1F1;
-
-    margin-right: 15px;
-  }
-
-  &__item:hover,
-  &__item.active {
-    font-family: Oswald;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 180.804%;
-    color: #FFF;
-    background: #A04955;
-    border: 1px solid #A04955;
-    cursor: pointer;
-  }
 }
 
 /* #endregion */
@@ -700,10 +603,6 @@ footer {
   line-height: 180%
 }
 
-/* #endregion */
-
-/* #region copy */
-
 .copypaster {
   padding: 10px 0;
 
@@ -717,23 +616,30 @@ footer {
 
 /* #endregion */
 
-/* #region catalog search */
+/* #region catalog content */
+
+
+.tree {
+  display: flex;
+  align-items: center;
+  column-gap: 8.3%;
+  box-sizing: border-box;
+  padding: 55px 0 24px;
+  background-color: $white;
+}
 
 .catalog {
-
-  &__up {
-    display: flex;
-    align-items: center;
-    column-gap: 8.3%;
-    box-sizing: border-box;
-    padding: 55px 0 24px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 20px 0;
 
   &__search {
     width: 100%;
   }
 
-  &__input {
+  &__search-inp {
     width: 100%;
     display: block;
     font-size: 64px;
@@ -744,22 +650,14 @@ footer {
     border-bottom: 2px solid #C4C4C4;
   }
 
-  &__input::placeholder {
+  &__search-inp::placeholder {
     color: #C4C4C4;
   }
 }
 
-/* #endregion */
-
-/* #region catalog content */
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 20px;
-  box-sizing: border-box;
-  padding: 20px 60px 76px;
+.catalog-outer {
   background-color: $SuperSilverColor;
+
 }
 
 .filter {
@@ -895,10 +793,69 @@ footer {
   }
 }
 
-.main {
+.product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 20px;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-auto-flow: row;
+  align-items: center;
+  row-gap: 5px;
+
+
+  box-sizing: border-box;
+  padding: 30px 60px;
+  background-color: $white;
+
+  &__image {
+    cursor: pointer;
+  }
+
+  &__name {
+    align-self: flex-start;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    color: $CarbonColor;
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    width: 150px;
+  }
+
+  &__rating img {
+    width: 24px;
+  }
+
+  &__price {
+    justify-self: center;
+  }
+
+  &__low {
+    font-weight: 200;
+    margin-right: 4px;
+  }
+
+  &__current-price,
+  &__cost {
+    font-weight: 500;
+  }
+
+  &__btn {
+    column-gap: 6px;
+  }
+
+  &__btn img {
+    width: 21px;
+  }
 }
 
 .not-found {
@@ -907,6 +864,46 @@ footer {
   line-height: normal;
   text-transform: uppercase;
   color: #C4C4C4;
+}
+
+.product-pagination {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 50px;
+
+
+  &_link {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180.804%;
+    color: #A04955;
+    border: 1px solid #A04955;
+    background: #F1F1F1;
+
+    margin-right: 15px;
+  }
+
+  &_link:hover,
+  &_link.active {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180.804%;
+    color: #FFF;
+    background: #A04955;
+    border: 1px solid #A04955;
+    cursor: pointer;
+  }
 }
 
 /* #endregion */
@@ -1151,7 +1148,7 @@ footer {
 
 /* #region shopping cart */
 
-.shop {
+.sc {
 
   &__content {
     height: 100vh;
@@ -1208,7 +1205,7 @@ footer {
     border-bottom: 1px solid $DrisheenColor;
   }
 
-  &__del {
+  &__del-btn {
     width: fit-content;
     height: fit-content;
     grid-row: 1/3;
@@ -1216,7 +1213,7 @@ footer {
     align-self: center;
   }
 
-  &__image {
+  &__product-image {
     max-width: 140px;
     min-width: 100px;
     object-fit: cover;
@@ -1225,7 +1222,7 @@ footer {
     align-self: center;
   }
 
-  &__title {
+  &__product-name {
     font-size: 32px;
     width: 100%;
 
@@ -1236,7 +1233,7 @@ footer {
     margin: 0 0 0 40px;
   }
 
-  &__item {
+  &__product-id {
     grid-row: 1;
     grid-column: 8/9;
     align-self: flex-start;
@@ -1244,7 +1241,7 @@ footer {
     margin: 0;
   }
 
-  &__remove {
+  &__counter-remove {
     height: 38px;
     grid-row: 2/3;
     grid-column: 4/5;
@@ -1272,7 +1269,7 @@ footer {
     border-radius: 4px;
   }
 
-  &__add {
+  &__counter-add {
     height: 40px;
     grid-row: 2/3;
     grid-column: 6/7;
@@ -1280,7 +1277,7 @@ footer {
     align-self: flex-end;
   }
 
-  &__cost {
+  &__product-price {
     grid-row: 2/3;
     grid-column: 7/9;
     align-self: center;
@@ -1291,7 +1288,7 @@ footer {
     margin: 0;
   }
 
-  &__cost-text {
+  &__cost {
     grid-row: 2/3;
     grid-column: 7/8;
 

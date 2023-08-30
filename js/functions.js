@@ -36,16 +36,16 @@ export function pagination(arr) {
   let itemOfPagination = Math.ceil(arr.length / itemOnPage);
 
   // creating pagination buttons
-  el('.pagination').innerHTML = ''
+  el('.product-pagination').innerHTML = ''
 
   let items = [];
  
   for (let i = 1; i <= itemOfPagination; i++) {
     let a = document.createElement('a');
     a.innerHTML = i;
-    a.classList.add('pagination__item')
+    a.classList.add('product-pagination_link')
     a.href = "#"
-    el('.pagination').appendChild(a);
+    el('.product-pagination').appendChild(a);
     items.push(a);
   }
 
@@ -57,7 +57,7 @@ export function pagination(arr) {
 
   function showPage(item) {
 
-    let active = el('.pagination__item.active')
+    let active = el('.product-pagination_link.active')
 
     if (active) {
       active.classList.remove('active');
@@ -72,7 +72,7 @@ export function pagination(arr) {
 
     let notes = arr.slice(start, end);
 
-    el('.main').innerHTML = '';
+    el('.product-list').innerHTML = '';
     for (let item of notes) {
       renderElement(item);
       console.log(item)
@@ -87,10 +87,10 @@ export function renderElement(item) {
   let render = new RenderCard(item)
 
   // call card rendering function for directories
-  el(".main").insertAdjacentHTML('beforeend', render.renderCatalogCard())
+  el(".product-list").insertAdjacentHTML('beforeend', render.renderCatalogCard())
 
   // calling the modal window rendering function for catalog cards
-  el('.main').addEventListener('click', (e) => {
+  el('.product-list').addEventListener('click', (e) => {
     if (e.target.classList.contains('card__image')) {
       render.renderModalCard(e.target.id)
     }
@@ -256,9 +256,9 @@ export function calcTotalCostSC() {
 
   let totalPrice = 0;
 
-  all(".shop__card").forEach((item) => totalPrice += parseInt(item.querySelector(".sc-item-price").innerText));
+  all(".sc__card").forEach((item) => totalPrice += parseInt(item.querySelector(".sc-item-price").innerText));
 
-  el(".sc-total-price").innerText = totalPrice.toLocaleString(); // number division
+  el(".sc__total-price").innerText = totalPrice.toLocaleString(); // number division
 }
 
 
@@ -268,8 +268,8 @@ export const statusShopCart = (item) => el(".header__counter").innerText = item.
 
 // shop cart window title
 export const titleShopCart = (mainElement) => {
-  if (mainElement.children.length > 0) el(".shop__empty").classList.add("hide");
-  else el(".shop__empty").classList.remove("hide");
+  if (mainElement.children.length > 0) el(".sc__empty").classList.add("hide");
+  else el(".sc__empty").classList.remove("hide");
 }
 
 
@@ -284,8 +284,8 @@ export const modalClose = (e) => {
 
 //close modal window Shop Cart function
 export const modalShopClose = (e) => {
-  if (e.target.closest('.sc-close') || !e.target.closest('.shop__content')) {
-    el(".shop").classList.add("hide");
+  if (e.target.closest('.sc__close') || !e.target.closest('.sc__content')) {
+    el(".sc").classList.add("hide");
     el("body").classList.remove("active");
   }
 }
@@ -306,7 +306,7 @@ export function searchFilter(value, product, datalist) {
   if (searchFilterData[0] === undefined || value === '') {
     localStorage.setItem('__product__', JSON.stringify(searchFilterData = []))
     console.warn(`not found`);
-    el(".main").innerHTML = `<h2 class="not-found">not found</h2>`;
+    el(".product-list").innerHTML = `<h2 class="not-found">not found</h2>`;
     return
   }
 
@@ -323,7 +323,7 @@ export function searcgCatalogValue(value, product) {
   if (searchFilterData[0] === undefined) {
     localStorage.setItem('__product__', JSON.stringify(searchFilterData = []))
     console.warn(`not found`);
-    el(".main").innerHTML = `<h2 class="not-found">not found</h2>`;
+    el(".product-list").innerHTML = `<h2 class="not-found">not found</h2>`;
     return
   }
   else if (value === '') {

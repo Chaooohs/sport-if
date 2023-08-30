@@ -16,22 +16,22 @@ export class RenderCard {
 
   renderCatalogCard() {
     const card = `
-          <div class="card sc-card" data-id="${this.id}" data-color="${this.productColor}">
-            <img class="card__image sc-image" src="${this.productImage1}" id="${this.id}" alt="img ">
-            <h4 class="card__title sc-title">${this.productName}</h4>
-            <div class="card__stars">
-              <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-              <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-              <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-              <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-              <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
+          <div class="product sc-card" data-id="${this.id}" data-color="${this.productColor}">
+            <img class="product__image sc-image" src="${this.productImage1}" id="${this.id}" alt="img ">
+            <h4 class="product__name sc-title">${this.productName}</h4>
+            <div class="product__rating">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
             </div>
-            <div class="card__spans">
-              <span class="card__as text_sm">As low as </span>
-              <span class="card__price text_sm">&#8372;</span>
-              <span class="price sc-price">${this.productCost}</span>
+            <div class="product__price">
+              <span class="product__low text_sm">As low as </span>
+              <span class="product__cost text_sm">&#8372;</span>
+              <span class="product__current-price sc-price">${this.productCost}</span>
             </div>
-            <button class="two__btn card__btn btn_red sc_btn" data-add="${this.id}">
+            <button class="two__btn product__btn btn_red sc_btn" data-add="${this.id}">
               <iconify-icon icon="subway:bag" width="21" height="21"></iconify-icon>
               add to cart
             </button>
@@ -42,23 +42,23 @@ export class RenderCard {
 
   renderShopCart() {
     const card = `
-          <div class="shop__card sc-card" data-id="${this.id}">
-            <button class="shop__del sc-del" data-del="del">
+          <div class="sc__card sc-card" data-id="${this.id}">
+            <button class="sc__del-btn sc-del" data-del="del">
               <img src="./img/svg/cloce.svg" alt="close">
             </button>
-            <img class="shop__image sc-image" src="${this.productImage1}" alt="${this.productName}">
-            <h1 class="modal__name-product shop__title r-title">${this.productName}</h1>
-            <span class="modal__item shop__item sc-id">item #${this.id}</span>
-            <button class="shop__remove sc-minus">
+            <img class="sc__product-image sc-image" src="${this.productImage1}" alt="${this.productName}">
+            <h1 class="modal__name-product sc__product-name">${this.productName}</h1>
+            <span class="modal__item sc__product-id sc-id">item #${this.id}</span>
+            <button class="sc__counter-remove sc-minus">
               <img src="./img/svg/minus.svg" alt="close" data-action="minus">
             </button>
-            <div class="shop__counter sc-counter">${this.productCounter}</div>
-            <button class="shop__add sc-plus">
+            <div class="sc__counter sc-counter">${this.productCounter}</div>
+            <button class="sc__counter-add sc-plus">
               <img src="./img/svg/plus.svg" alt="close" data-action="plus">
             </button>
-            <span class="shop__cost-text text_sm modal__price">cost:</span>
-            <div class="shop__cost text_sm modal__price">
-              <span class="shop__price sc-item-price" data-cost="${this.productCost}"> ${this.productCost}</span>
+            <span class="sc__cost text_sm modal__price">cost:</span>
+            <div class="sc__product-price text_sm modal__price">
+              <span class="sc__current-price sc-item-price" data-cost="${this.productCost}"> ${this.productCost}</span>
               <span> &#8372;</span>
             </div>
           </div>
