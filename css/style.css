@@ -227,9 +227,9 @@ input[type=checkbox]:checked + label {
   display: none;
 }
 
-.arrow-up {
+.scroll-up-btn {
   width: 84px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   right: 60px;
   bottom: 4rem;
@@ -545,6 +545,10 @@ input[type=checkbox]:checked + label {
 
 /* #endregion */
 /* #region footer */
+footer {
+  position: relative;
+}
+
 .footer {
   padding: 3.5% 0;
   background-color: #a04956;
@@ -601,10 +605,10 @@ input[type=checkbox]:checked + label {
 
 /* #endregion */
 /* #region copy */
-.copy {
+.copypaster {
   padding: 10px 0;
 }
-.copy__text {
+.copypaster__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 180%;
@@ -652,7 +656,7 @@ input[type=checkbox]:checked + label {
   background-color: #f1f1f1;
 }
 
-.aside {
+.filter {
   width: 316px;
   height: 974px;
   border: 1px solid #A04955;
@@ -661,17 +665,17 @@ input[type=checkbox]:checked + label {
   padding: 25px;
   overflow: auto;
 }
-.aside__box {
+.filter__box {
   padding-bottom: 20px;
   border-bottom: 1px solid #a04956;
 }
-.aside__chapter {
+.filter__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
 }
-.aside__title {
+.filter__heading {
   font-size: 20px;
   font-weight: 400;
   line-height: 180%;
@@ -679,31 +683,30 @@ input[type=checkbox]:checked + label {
   text-transform: uppercase;
   color: #000;
 }
-.aside__arrow {
+.filter__icon {
   width: 20px;
 }
-.aside__list {
+.filter__content {
   display: none;
 }
-.aside__list.active {
+.filter__content.active {
   display: block;
 }
-.aside__flex {
+.filter__list {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-.aside__flex input {
+.filter__flex input {
   display: none;
 }
-.aside__content {
+.filter__content {
   display: none;
 }
-.aside__content.active {
+.filter__content.active {
   display: block;
 }
-
-.square-all {
+.filter__subfilter_all {
   width: 100%;
   height: 40px;
   text-transform: uppercase;
@@ -711,18 +714,15 @@ input[type=checkbox]:checked + label {
   border: 1px solid #f1f1f1;
   margin-bottom: 15px;
 }
-
-.square-all:hover {
+.filter__subfilter_all:hover {
   color: #a04956;
   border: 1px solid #a04956;
 }
-
-.square-all.active {
+.filter__subfilter_all.active {
   color: #a04956;
   border: 1px solid #a04956;
 }
-
-.square-size {
+.filter__subfilter_size {
   font-size: 20px;
   font-weight: 300;
   line-height: 180%;
@@ -737,32 +737,25 @@ input[type=checkbox]:checked + label {
   background-color: #f1f1f1;
   cursor: pointer;
 }
-
-.square-size:hover {
+.filter__subfilter_size:hover {
   border: 1px solid #a04956;
 }
-
-.square-size.active {
+.filter__subfilter_size.active {
   border: 1px solid #a04956;
 }
-
-.square-color {
+.filter__subfilter_color {
   width: 36px;
   height: 36px;
   border: 1px solid #f1f1f1;
   cursor: pointer;
 }
-
-.square-color:hover {
+.filter__subfilter_color:hover {
   border: 1px solid #a04956;
 }
-
-.square-color.active {
+.filter__subfilter_color.active {
   border: 1px solid #a04956;
 }
-
-.square-size:disabled,
-.square-color:disabled {
+.filter__subfilter_size:disabled, .filter__subfilter_color:disabled {
   opacity: 0.1;
   border: 1px solid #a04956;
 }

@@ -253,9 +253,9 @@ input[type="checkbox"]:checked+label {
   display: none;
 }
 
-.arrow-up {
+.scroll-up-btn {
   width: 84px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
   right: 60px;
   bottom: 4rem;
@@ -642,6 +642,10 @@ input[type="checkbox"]:checked+label {
 
 /* #region footer */
 
+footer {
+  position: relative;
+}
+
 .footer {
   padding: 3.5% 0;
   background-color: $DrisheenColor;
@@ -700,7 +704,7 @@ input[type="checkbox"]:checked+label {
 
 /* #region copy */
 
-.copy {
+.copypaster {
   padding: 10px 0;
 
   &__text {
@@ -758,7 +762,7 @@ input[type="checkbox"]:checked+label {
   background-color: $SuperSilverColor;
 }
 
-.aside {
+.filter {
   width: 316px;
   height: 974px;
   border: 1px solid #A04955;
@@ -772,14 +776,14 @@ input[type="checkbox"]:checked+label {
     border-bottom: 1px solid $DrisheenColor;
   }
 
-  &__chapter {
+  &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
   }
 
-  &__title {
+  &__heading {
     font-size: 20px;
     font-weight: 400;
     line-height: 180%;
@@ -788,19 +792,19 @@ input[type="checkbox"]:checked+label {
     color: $black;
   }
 
-  &__arrow {
+  &__icon {
     width: 20px;
   }
 
-  &__list {
+  &__content {
     display: none;
   }
 
-  &__list.active {
+  &__content.active {
     display: block;
   }
 
-  &__flex {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -817,76 +821,78 @@ input[type="checkbox"]:checked+label {
   &__content.active {
     display: block;
   }
-}
 
-.square-all {
-  width: 100%;
-  height: 40px;
-  text-transform: uppercase;
-  color: $black;
-  border: 1px solid $SuperSilverColor;
-  margin-bottom: 15px;
-}
+  &__subfilter {
 
-.square-all:hover {
-  color: $DrisheenColor;
-  border: 1px solid $DrisheenColor;
-}
+    &_all {
+      width: 100%;
+      height: 40px;
+      text-transform: uppercase;
+      color: $black;
+      border: 1px solid $SuperSilverColor;
+      margin-bottom: 15px;
+    }
 
-.square-all.active {
-  color: $DrisheenColor;
-  border: 1px solid $DrisheenColor;
-}
+    &_all:hover {
+      color: $DrisheenColor;
+      border: 1px solid $DrisheenColor;
+    }
 
+    &_all.active {
+      color: $DrisheenColor;
+      border: 1px solid $DrisheenColor;
+    }
 
-.square-size {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 180%;
-  text-transform: uppercase;
-  color: $black;
+    &_size {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 180%;
+      text-transform: uppercase;
+      color: $black;
 
-  width: 36px;
-  height: 36px;
+      width: 36px;
+      height: 36px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  border: 1px solid $SuperSilverColor;
-  background-color: $SuperSilverColor;
-  cursor: pointer;
-}
+      border: 1px solid $SuperSilverColor;
+      background-color: $SuperSilverColor;
+      cursor: pointer;
+    }
 
-.square-size:hover {
-  border: 1px solid $DrisheenColor;
-}
+    &_size:hover {
+      border: 1px solid $DrisheenColor;
+    }
 
-.square-size.active {
-  border: 1px solid $DrisheenColor;
-}
+    &_size.active {
+      border: 1px solid $DrisheenColor;
+    }
 
-.square-color {
-  width: 36px;
-  height: 36px;
-  border: 1px solid $SuperSilverColor;
-  cursor: pointer;
-}
+    &_color {
+      width: 36px;
+      height: 36px;
+      border: 1px solid $SuperSilverColor;
+      cursor: pointer;
+    }
 
-.square-color:hover {
-  // opacity: .5;
-  border: 1px solid $DrisheenColor;
-}
+    &_color:hover {
+      // opacity: .5;
+      border: 1px solid $DrisheenColor;
+    }
 
-.square-color.active {
-  // opacity: .2;
-  border: 1px solid $DrisheenColor;
-}
+    &_color.active {
+      // opacity: .2;
+      border: 1px solid $DrisheenColor;
+    }
 
-.square-size:disabled,
-.square-color:disabled {
-  opacity: .1;
-  border: 1px solid $DrisheenColor;
+    &_size:disabled,
+    &_color:disabled {
+      opacity: .1;
+      border: 1px solid $DrisheenColor;
+    }
+  }
 }
 
 .main {
@@ -925,7 +931,7 @@ input[type="checkbox"]:checked+label {
 
   &__content {
     position: relative;
-    width: 100%;    
+    width: 100%;
     max-height: 100vh;
     overflow: auto;
     max-width: 1300px;

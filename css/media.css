@@ -18,9 +18,6 @@
   .card {
     padding: 30px 20px;
   }
-  .arrow-up {
-    width: 68px;
-  }
   header {
     position: fixed;
     width: 100%;
@@ -132,7 +129,7 @@
   .six__cards {
     display: grid;
   }
-  .aside {
+  .filter {
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
@@ -143,6 +140,9 @@
   }
   .content {
     grid-template-columns: 1fr;
+  }
+  .scroll-up-btn {
+    width: 68px;
   }
   .modal__content {
     padding: 60px 30px 100px;
@@ -255,11 +255,11 @@
   .footer__btn {
     width: 100%;
   }
-  .arrow-up {
+  .scroll-up-btn {
     right: 20px;
     bottom: 3.5rem;
   }
-  .aside {
+  .filter {
     padding: 20px;
   }
   .catalog__input {
@@ -393,11 +393,14 @@
   .footer__title {
     font-size: 18px;
   }
+  .scroll-up-btn {
+    bottom: 22rem;
+  }
   .content {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .aside {
+  .filter {
     grid-template-columns: 1fr;
   }
   .modal__content {

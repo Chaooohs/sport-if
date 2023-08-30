@@ -71,7 +71,7 @@ el('[data-tab="accessories"]').addEventListener('click', (e) => {
 
 
 // open side menu
-all(".aside__chapter").forEach((item) => {
+all(".filter__header").forEach((item) => {
   item.addEventListener("click", function (event) {
     this.nextElementSibling.classList.toggle("active");
   });

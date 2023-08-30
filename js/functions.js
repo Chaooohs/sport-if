@@ -111,7 +111,7 @@ export function colorsFiltering(e, catalog) {
   selectColor = buttonC
   selectColor.classList.add('active')
 
-  if (e.target.classList.contains('square-all')) {
+  if (e.target.classList.contains('filter__subfilter_all')) {
     pagination(catalog)
   }
   else {
@@ -142,7 +142,7 @@ export function sizesFiltering(e, catalog) {
 
   selectSize.classList.add('active')
 
-  if (e.target.classList.contains('square-all')) {
+  if (e.target.classList.contains('filter__subfilter_all')) {
     pagination(catalog)
   }
   else {
@@ -162,7 +162,7 @@ export function sizesFiltering(e, catalog) {
 // colors filter function for sidebar
 export function colorsFilter(product) {
 
-  el("#color").innerHTML = ''
+  el("#colorFilterList").innerHTML = ''
 
   let allColors = [];
 
@@ -174,10 +174,10 @@ export function colorsFilter(product) {
 
   colors.forEach((color) => {
     const button = document.createElement("button");
-    button.classList.add("square-color");
+    button.classList.add("filter__subfilter_color");
     button.style.backgroundColor = `${color}`;
     button.setAttribute("data-color", `${color}`);
-    el("#color").append(button);
+    el("#colorFilterList").append(button);
   });
 }
 
@@ -185,7 +185,7 @@ export function colorsFilter(product) {
 // sizes filter function for sidebar
 export function sizesFilter(product) {
 
-  el("#size").innerHTML = ''
+  el("#sizeFilterList").innerHTML = ''
 
   let allSizes = [];
 
@@ -204,10 +204,10 @@ export function sizesFilter(product) {
 
   sizes.forEach((size) => {
     const button = document.createElement("button");
-    button.classList.add("square-size");
+    button.classList.add("filter__subfilter_size");
     button.setAttribute("data-size", `${size}`);
     button.innerText = `${size}`;
-    el("#size").append(button);
+    el("#sizeFilterList").append(button);
   });
 }
 

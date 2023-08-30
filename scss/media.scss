@@ -36,10 +36,6 @@ $white: #fff;
     padding: 30px 20px;
   }
 
-  .arrow-up {
-    width: 68px;
-  }
-
   // header ___________________________
   header {
     position: fixed;
@@ -183,7 +179,7 @@ $white: #fff;
   }
 
   // catalog______________________________
-  .aside {
+  .filter {
     width: 100%;
     height: fit-content;
     display: grid;
@@ -193,6 +189,11 @@ $white: #fff;
 
   .content {
     grid-template-columns: 1fr;
+  }
+
+  // footer _______________________________
+  .scroll-up-btn {
+    width: 68px;
   }
 
   // modal _______________________________
@@ -341,13 +342,13 @@ $white: #fff;
     width: 100%;
   }
 
-  .arrow-up {
+  .scroll-up-btn {
     right: 20px;
     bottom: 3.5rem;
   }
 
   // catalog _______________________________
-  .aside {
+  .filter {
     padding: 20px;
   }
 
@@ -518,13 +519,17 @@ $white: #fff;
     font-size: 18px;
   }
 
+  .scroll-up-btn {
+    bottom: 22rem;
+  }
+
   // catalog ________________________
   .content {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .aside {
+  .filter{
     grid-template-columns: 1fr;
   }
 
