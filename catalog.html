@@ -133,6 +133,107 @@
         </div>
       </div>
     </div>
+    <div class="md hide"> <!-- cart modal -->
+      <div class="md__content sc-card">
+        <button class="close md-close">
+          <img src="./img/svg/cloce.svg" alt="close">
+        </button>
+        <div class="grid">
+          <div class="md__left">
+            <img class="md__image sc-image" src="" alt="product">
+            <div class="md__block-image">
+              <img class="md__img-front" src="" alt="front">
+              <img class="md__img-back" src="" alt="back">
+            </div>
+          </div>
+          <div class="md__right">
+            <div class="md__chapter">
+              <h1 class="md__product-name sc-title">ssss</h1>
+              <span class="md__item">item #</span>
+              <span class="md__product-id sc-id"></span>
+            </div>
+            <div class="product__rating md__rating">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="./img/svg/star-yellow.svg" alt="star">
+            </div>
+            <div class="md__low">As low as</div>
+            <div class="md__cost">
+              <span>&#8372;</span>
+              <span class="md__product-price sc-price"></span>
+            </div>
+            <div>
+              <span class="md__size">size</span>
+              <div class="md__size-block"></div>
+            </div>
+            <div class="md__buttons">
+              <button class="md__bag sc-add">
+                <iconify-icon icon="subway:bag" width="21" height="21"></iconify-icon>
+                add to bag
+              </button>
+              <button class="md__wish">
+                <iconify-icon icon="mdi:heart" width="30" height="30"></iconify-icon>
+                add to wishlist
+              </button>
+            </div>
+            <div class="md__social">
+              <a href="https://uk-ua.facebook.com/">
+                <img src="./img/svg/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://twitter.com/?lang=uk">
+                <img src="./img/svg/twitter.svg" alt="twitter">
+              </a>
+              <a href="https://www.pinterest.com/">
+                <img src="./img/svg/pinterest.svg" alt="pinterest">
+              </a>
+              <a href="#">
+                <img src="./img/svg/link.svg" alt="link">
+              </a>
+            </div>
+            <div class="md__copypaster">
+              <h2 class="md__worry">- Worry Free Shopping -</h2>
+              <div class="md__bellow">
+                <div class="md__copy-delivery">
+                  <img src="./img/svg/free-delivery.svg" alt="img">
+                  <span class="modal__copy-text">free priority shipping on ofders $99+*</span>
+                </div>
+                <div class="md__copy-exchange">
+                  <img src="./img/svg/exchange.svg" alt="img">
+                  <span class="modal__copy-text">free returns & exchanges*</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md sc hide"> <!-- shopping cart modal -->
+      <div class="sc__content md__content">
+        <div class="sc__header">
+          <h1 class="filter__heading sc__ch">
+            shopping cart
+            <span class="sc__empty">is empty</span>
+          </h1>
+          <button class="sc__close">
+            <img src="./img/svg/cloce.svg" alt="close">
+          </button>
+        </div>
+        <div class="wrap">
+          <div class="sc__main">
+            <!-- adding cards to shop cart -->
+          </div>
+        </div>
+        <div class="sc__footer">
+          <button class="sc__pay btn_red">
+            pay: &nbsp;
+            <span class="sc__total-price"></span>
+            &nbsp; &#8372;
+          </button>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="footer">
         <div class="wrap">
@@ -201,117 +302,6 @@
         </a>
       </div>
     </footer>
-    <section> <!-- card modal -->
-      <div class="modal hide">
-        <div class="modal__content sc-card">
-          <button class="close md-close">
-            <img src="./img/svg/cloce.svg" alt="close">
-          </button>
-          <div class="grid">
-            <div class="modal__left">
-              <img class="modal__image sc-image" src="" alt="product">
-              <div class="modal__block-image">
-                <img class="modal__img-front" src="" alt="front">
-                <img class="modal__img-back" src="" alt="back">
-              </div>
-            </div>
-            <div class="modal__right">
-              <div class="modal__chapter">
-                <h1 class="modal__name-product sc-title">ssss</h1>
-                <span class="modal__item">item #</span>
-                <span class="modal__id sc-id"></span>
-              </div>
-              <div class="card__stars modal__stars">
-                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-                <iconify-icon icon="bi:star-fill" style="color: #ffcc48;" width="24" height="24"></iconify-icon>
-              </div>
-              <div class="modal__as">As low as</div>
-              <div class="modal__cost">
-                <span>&#8372;</span>
-                <span class="modal__price sc-price"></span>
-              </div>
-              <div>
-                <span class="modal__size">size</span>
-                <div class="modal__size-block"></div>
-              </div>
-              <div class="modal__buttons">
-                <button class="modal__bag sc-add">
-                  <iconify-icon icon="subway:bag" width="21" height="21"></iconify-icon>
-                  add to bag
-                </button>
-                <button class="modal__wish">
-                  <iconify-icon icon="mdi:heart" width="30" height="30"></iconify-icon>
-                  add to wishlist
-                </button>
-              </div>
-              <div class="modal__social">
-                <a href="https://uk-ua.facebook.com/">
-                  <img src="./img/svg/facebook.svg" alt="facebook">
-                </a>
-                <a href="https://twitter.com/?lang=uk">
-                  <img src="./img/svg/twitter.svg" alt="twitter">
-                </a>
-                <a href="https://www.pinterest.com/">
-                  <img src="./img/svg/pinterest.svg" alt="pinterest">
-                </a>
-                <a href="#">
-                  <img src="./img/svg/link.svg" alt="link">
-                </a>
-              </div>
-              <div class="modal__copy">
-                <h2 class="modal__worry">- Worry Free Shopping -</h2>
-                <div class="modal__bellow">
-                  <div class="modal__copy-delivery">
-                    <img src="./img/svg/free-delivery.svg" alt="img">
-                    <span class="modal__copy-text">free priority shipping on ofders $99+*</span>
-                  </div>
-                  <div class="modal__copy-exchange">
-                    <img src="./img/svg/exchange.svg" alt="img">
-                    <span class="modal__copy-text">free returns & exchanges*</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section> <!-- shopping cart modal -->
-      <div class="modal sc hide">
-        <div class="sc__content modal__content">
-          <header>
-            <div class="sc__header">
-              <h1 class="filter__heading sc__ch">
-                shopping cart
-                <span class="sc__empty">is empty</span>
-              </h1>
-              <button class="sc__close">
-                <img src="./img/svg/cloce.svg" alt="close">
-              </button>
-            </div>
-          </header>
-          <main>
-            <div class="wrap">
-              <div class="sc__main">
-                <!-- adding cards to shop cart -->
-              </div>
-            </div>
-          </main>
-          <footer>
-            <div class="sc__footer">
-              <button class="sc__pay btn_red">
-                pay: &nbsp;
-                <span class="sc__total-price"></span>
-                &nbsp; &#8372;
-              </button>
-            </div>
-          </footer>
-        </div>
-      </div>
-    </section>
   </div>
 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

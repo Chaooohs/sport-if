@@ -75,7 +75,6 @@ export function pagination(arr) {
     el('.product-list').innerHTML = '';
     for (let item of notes) {
       renderElement(item);
-      console.log(item)
     }
   }
 }
@@ -91,7 +90,7 @@ export function renderElement(item) {
 
   // calling the modal window rendering function for catalog cards
   el('.product-list').addEventListener('click', (e) => {
-    if (e.target.classList.contains('card__image')) {
+    if (e.target.classList.contains('product__image')) {
       render.renderModalCard(e.target.id)
     }
   })
@@ -275,8 +274,8 @@ export const titleShopCart = (mainElement) => {
 
 // close modal window function
 export const modalClose = (e) => {
-  if (e.target.closest('.md-close') || !e.target.closest('.modal__content')) {
-    el(".modal").classList.add("hide");
+  if (e.target.closest('.md-close') || !e.target.closest('.md__content')) {
+    el(".md").classList.add("hide");
     el("body").classList.remove("active");
   }
 }

@@ -82,7 +82,6 @@ input[type="checkbox"]:checked+label {
 }
 
 .box {
-  max-width: 1440px;
   background-color: $SuperSilverColor;
 }
 
@@ -356,7 +355,7 @@ input[type="checkbox"]:checked+label {
   box-sizing: border-box;
   padding: 80px 0;
 
-  &__cards {
+  &__product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 55px;
@@ -616,7 +615,7 @@ footer {
 
 /* #endregion */
 
-/* #region catalog content */
+/* #region catalog */
 
 
 .tree {
@@ -727,7 +726,7 @@ footer {
       height: 40px;
       text-transform: uppercase;
       color: $black;
-      border: 1px solid $SuperSilverColor;
+      border: 1px solid #bbb;
       margin-bottom: 15px;
     }
 
@@ -771,7 +770,7 @@ footer {
     &_color {
       width: 36px;
       height: 36px;
-      border: 1px solid $SuperSilverColor;
+      border: 1px solid #bbb;
       cursor: pointer;
     }
 
@@ -806,9 +805,9 @@ footer {
   align-items: center;
   row-gap: 5px;
 
-
+  height: fit-content;
   box-sizing: border-box;
-  padding: 30px 60px;
+  padding: 24px 24px;
   background-color: $white;
 
   &__image {
@@ -910,11 +909,11 @@ footer {
 
 /* #region modal */
 
-.modal.hide {
+.md.hide {
   display: none;
 }
 
-.modal {
+.md {
   position: fixed;
   top: 0;
   right: 0;
@@ -978,7 +977,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  &__name-product {
+  &__product-name {
     font-size: 48px;
     font-weight: 600;
     line-height: normal;
@@ -987,7 +986,7 @@ footer {
   }
 
   &__item,
-  &__id {
+  &__product-id {
     font-size: 15px;
     font-weight: 400;
     line-height: normal;
@@ -995,11 +994,11 @@ footer {
     color: $black;
   }
 
-  &__stars {
+  &__rating {
     justify-self: flex-start;
   }
 
-  &__as {
+  &__low {
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
@@ -1103,7 +1102,7 @@ footer {
     height: 34px;
   }
 
-  &__copy {
+  &__copypaster {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1172,7 +1171,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    // border-radius: 8px 8px 0 0;
     border-bottom: 1px solid $DrisheenColor;
     padding: 0 30px;
   }

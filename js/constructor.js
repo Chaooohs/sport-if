@@ -47,7 +47,7 @@ export class RenderCard {
               <img src="./img/svg/cloce.svg" alt="close">
             </button>
             <img class="sc__product-image sc-image" src="${this.productImage1}" alt="${this.productName}">
-            <h1 class="modal__name-product sc__product-name">${this.productName}</h1>
+            <h1 class="md__product-name sc__product-name">${this.productName}</h1>
             <span class="modal__item sc__product-id sc-id">item #${this.id}</span>
             <button class="sc__counter-remove sc-minus">
               <img src="./img/svg/minus.svg" alt="close" data-action="minus">
@@ -69,26 +69,26 @@ export class RenderCard {
   renderModalCard(id) {
 
     // open modal window
-    el(".modal").classList.remove("hide");
+    el(".md").classList.remove("hide");
     el("body").classList.add("active");
 
     // filling modal window
     if (id === this.id) {
-      el(".modal__content").setAttribute("data-id", `${this.id}`)
-      el(".modal__image").setAttribute("src", this.productImage1);
-      el(".modal__img-front").setAttribute("src", this.productImage1);
-      el(".modal__img-back").setAttribute("src", this.productImage2);
-      el(".modal__name-product").innerText = this.productName;
-      el(".modal__id").innerText = this.id;
-      el(".modal__price").innerHTML = this.productCost;
-      el(".modal__bag").setAttribute("data-add", this.id);
-      el(".modal__bag").classList.add("sc_btn");
-      el(".modal__size-block").innerHTML = "";
+      el(".md__content").setAttribute("data-id", `${this.id}`)
+      el(".md__image").setAttribute("src", this.productImage1);
+      el(".md__img-front").setAttribute("src", this.productImage1);
+      el(".md__img-back").setAttribute("src", this.productImage2);
+      el(".md__product-name").innerText = this.productName;
+      el(".md__product-id").innerText = this.id;
+      el(".md__product-price").innerHTML = this.productCost;
+      el(".md__bag").setAttribute("data-add", this.id);
+      el(".md__bag").classList.add("sc_btn");
+      el(".md__size-block").innerHTML = "";
       for (let size of this.productSize) {
         let div = document.createElement("div");
-        div.classList.add("modal__size-square");
+        div.classList.add("md__size-square");
         div.innerText = size;
-        el(".modal__size-block").append(div);
+        el(".md__size-block").append(div);
       }
     }
   }
@@ -96,8 +96,8 @@ export class RenderCard {
 
 
 // changing images in a modal window
-el('.modal__block-image').addEventListener("click", (e) => {
-  if (e.target.classList.contains("modal__img-back") || e.target.classList.contains("modal__img-front")) {
-    el(".modal__image").setAttribute("src", e.target.currentSrc)
+el('.md__block-image').addEventListener("click", (e) => {
+  if (e.target.classList.contains("md__img-back") || e.target.classList.contains("md__img-front")) {
+    el(".md__image").setAttribute("src", e.target.currentSrc)
   }
 });

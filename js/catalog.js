@@ -84,7 +84,7 @@ el(".header__underlay").addEventListener("click", menuBurger);
 
 
 // close modal window function
-el('.modal').addEventListener('click', modalClose)
+el('.md').addEventListener('click', modalClose)
 
 
 // search set function global

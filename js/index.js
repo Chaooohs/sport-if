@@ -34,17 +34,17 @@ function outJson(json) {
 // outputting cards on the main page
 function renderElement(item) {
   let render = new RenderCard(item)
-  el(".two__cards").insertAdjacentHTML('beforeend', render.renderCatalogCard())
+  el(".two__product-list").insertAdjacentHTML('beforeend', render.renderCatalogCard())
 
   // calling the modal window rendering function for main cards
-  el(".two__cards").addEventListener("click", function (e) {
-    if (e.target.classList.contains('card__image')) render.renderModalCard(e.target.id);
+  el(".two__product-list").addEventListener("click", function (e) {
+    if (e.target.classList.contains('product__image')) render.renderModalCard(e.target.id);
   })
 }
 
 
 // close modal window function
-el('.modal').addEventListener('click', modalClose)
+el('.md').addEventListener('click', modalClose)
 
 
 // mobile menu active

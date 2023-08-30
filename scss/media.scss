@@ -155,7 +155,7 @@ $white: #fff;
   }
 
   // two _________________________
-  .two__cards {
+  .two__product-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
   }
@@ -175,6 +175,10 @@ $white: #fff;
   }
 
   // catalog______________________________
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
   .filter {
     width: 100%;
     height: fit-content;
@@ -183,44 +187,50 @@ $white: #fff;
     column-gap: 55px;
   }
 
+  .filter,
+  .product-list,
+  .product-pagination {
+    grid-column: 1;
+  }
+
   // footer _______________________________
   .scroll-up-btn {
     width: 68px;
   }
 
   // modal _______________________________
-  .modal__content {
+  .md__content {
     padding: 60px 30px 100px;
   }
 
-  .modal__chapter {
+  .md__chapter {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .modal__name-product {
+  .md__product-name {
     width: 100%;
     font-size: 32px;
     line-height: 100%;
   }
 
-  .modal__item {
+  .md__item {
     margin-left: 0;
   }
 
-  .modal__buttons,
-  .modal__bellow {
+  .md__buttons,
+  .md__bellow {
     flex-direction: column;
     row-gap: 20px;
   }
 
-  .modal__bag,
-  .modal__wish {
+  .md__bag,
+  .md__wish {
     max-width: 100%;
   }
 
-  .modal__copy-delivery,
-  .modal__copy-exchange {
+  .md__copy-delivery,
+  .md__copy-exchange {
     width: 100%;
   }
 
@@ -259,6 +269,7 @@ $white: #fff;
   .sc__product-name {
     grid-column: 3/9;
     align-self: center;
+    font-size: 26px;
   }
 
   .sc__footer {
@@ -355,21 +366,21 @@ $white: #fff;
 
   // modal ________________________________________
 
-  .modal__block-image {
+  .md__block-image {
     column-gap: 26px;
   }
 
-  .modal__img-front,
-  .modal__img-back {
+  .md__img-front,
+  .md__img-back {
     width: 90px;
     height: 90px;
   }
 
-  .modal__buttons {
+  .md__buttons {
     align-items: center;
   }
 
-  .modal__as {
+  .md__low {
     margin-bottom: 0;
   }
 
@@ -392,7 +403,7 @@ $white: #fff;
     right: 0;
   }
 
-  .sc_product-image {
+  .sc__product-image {
     grid-column: 1;
     justify-self: center;
   }
@@ -449,7 +460,7 @@ $white: #fff;
   .sc__product-name {
     grid-row: 1;
     grid-column: 2/4;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
   }
 
@@ -514,23 +525,19 @@ $white: #fff;
   }
 
   // catalog ________________________
-  .catalog {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
-  .filter{
+  .filter {
     grid-template-columns: 1fr;
   }
 
   // modal ____________________________
 
-  .modal__content {
+  .md__content {
     padding-right: 20px;
     padding-left: 20px;
   }
 
-  .modal__image {
+  .md__image {
     margin-bottom: 60px;
   }
 
