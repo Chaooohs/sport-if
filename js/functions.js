@@ -39,13 +39,14 @@ export function pagination(arr) {
   el('.pagination').innerHTML = ''
 
   let items = [];
-
+ 
   for (let i = 1; i <= itemOfPagination; i++) {
-    let div = document.createElement('div');
-    div.innerHTML = i;
-    div.classList.add('pagination__item')
-    el('.pagination').appendChild(div);
-    items.push(div);
+    let a = document.createElement('a');
+    a.innerHTML = i;
+    a.classList.add('pagination__item')
+    a.href = "#"
+    el('.pagination').appendChild(a);
+    items.push(a);
   }
 
   showPage(items[0]);
@@ -74,6 +75,7 @@ export function pagination(arr) {
     el('.main').innerHTML = '';
     for (let item of notes) {
       renderElement(item);
+      console.log(item)
     }
   }
 }

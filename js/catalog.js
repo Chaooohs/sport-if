@@ -25,7 +25,6 @@ function outJson(json) {
 
   let productType = JSON.parse(localStorage.getItem("__product__"));
 
-  console.log(productType)
   switch (productType) {
     case 'shorts':
       const shorts = filter(json, "productType", "shorts");
