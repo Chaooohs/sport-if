@@ -545,6 +545,17 @@ $white: #fff;
     top: 40px;
   }
 
+  .md-zoom__body {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 60px;
+  }
+
+  .md-zoom__close {
+    position: static;
+    margin: 0 0 30px 20px;
+  }
+
 
   // shop cart __________________________
 

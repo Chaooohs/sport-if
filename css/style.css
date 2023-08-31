@@ -983,7 +983,7 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 10000;
-  background-color: rgb(41, 42, 47);
+  background-color: #fff;
 }
 .md-zoom__body {
   width: 100%;
@@ -1000,8 +1000,9 @@ footer {
 .md-zoom__close {
   position: absolute;
   top: 30px;
-  right: 30px;
-  width: 48px;
+  left: 20px;
+  background-color: #fff;
+  border-radius: 50px;
 }
 
 .close {
