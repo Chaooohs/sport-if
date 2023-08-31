@@ -7,7 +7,9 @@
     "productSize": [30, 31, 32, 33, 34, 36],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/ZS3858/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/ZS3858/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/ZS3858/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/ZS3858/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/ZS3858/1600x2133/1.jpg"
   },
   {
     "id": "0002",
@@ -17,7 +19,9 @@
     "productCost": 5399,
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/ZS3698/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/ZS3698/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/ZS3698/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/ZS3698/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/ZS3698/1600x2133/1.jpg"
   },
   {
     "id": "0003",
@@ -27,7 +31,9 @@
     "productSize": [30, 31, 32, 33, 34, 36, 38],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/ZS3697/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/ZS3697/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/ZS3697/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/ZS3697/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/ZS3697/1600x2133/1.jpg"
   },
   {
     "id": "0004",
@@ -37,7 +43,9 @@
     "productSize": [28, 29, 30, 31, 32],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/TH7278/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/TH7278/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/TH7278/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/TH7278/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/TH7278/1600x2133/1.jpg"
   },
   {
     "id": "0005",
@@ -47,7 +55,9 @@
     "productCost": 4999,
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/TH7277/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/TH7277/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/TH7277/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/TH7277/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/TH7277/1600x2133/1.jpg"
   },
   {
     "id": "0006",
@@ -57,7 +67,9 @@
     "productSize": [30, 32, 33],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LEE410/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE410/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE410/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE410/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE410/1600x2133/1.jpg"
   },
   {
     "id": "0007",
@@ -67,7 +79,9 @@
     "productSize": [28, 29, 30, 31, 32],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/95286/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/95286/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/95286/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/95286/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/95286/1600x2133/3.jpeg"
   },
   {
     "id": "0008",
@@ -77,7 +91,9 @@
     "productSize": [29, 30, 31, 32, 34, 38],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/DIM105/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM105/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM105/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM105/1600x2133/MAIN.jpg",
+    "productImage2zoom": "hhttps://intertop.ua/load/DIM105/1600x2133/1.jpg"
   },
   {
     "id": "0009",
@@ -87,7 +103,9 @@
     "productSize": [28, 29, 30, 31, 32, 33, 34, 36, 38],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/DIM24/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM24/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM24/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM24/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM24/1600x2133/1.jpg"
   },
   {
     "id": "0010",
@@ -97,7 +115,9 @@
     "productSize": [32, 33, 36],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/DIM22/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM22/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM22/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM22/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM22/1600x2133/1.jpg"
   },
   {
     "id": "0011",
@@ -107,7 +127,9 @@
     "productSize": [32, 38],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/DIM23/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM23/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM23/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM23/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM23/1600x2133/1.jpg"
   },
   {
     "id": "0012",
@@ -117,7 +139,9 @@
     "productSize": [28, 29, 30, 31, 32, 33, 34, 36, 38],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/DIM24/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM24/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM24/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM24/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM24/1600x2133/1.jpg"
   },
   {
     "id": "0013",
@@ -127,7 +151,9 @@
     "productSize": [29, 30, 31, 32, 33, 34, 36],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/DIM148/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM148/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM148/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM148/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM148/1600x2133/1.jpg"
   },
   {
     "id": "0014",
@@ -137,7 +163,9 @@
     "productSize": [30, 31, 32, 33, 34, 36, 38],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/PJ1585/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PJ1585/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PJ1585/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PJ1585/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PJ1585/1600x2133/1.jpg"
   },
   {
     "id": "0015",
@@ -147,7 +175,9 @@
     "productSize": [36, 38],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/ZEG507/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/ZEG507/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/ZEG507/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/ZEG507/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/ZEG507/1600x2133/1.jpg"
   },
   {
     "id": "0016",
@@ -157,7 +187,9 @@
     "productSize": [30, 32, 34],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/KTM1023/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KTM1023/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KTM1023/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KTM1023/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KTM1023/1600x2133/1.jpg"
   },
   {
     "id": "0017",
@@ -167,7 +199,9 @@
     "productSize": [38],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/KTM984/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KTM984/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KTM984/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KTM984/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KTM984/1600x2133/1.jpg"
   },
   {
     "id": "0018",
@@ -177,7 +211,9 @@
     "productSize": [31, 32, 33, 34, 36],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/PJ1570/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PJ1570/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PJ1570/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PJ1570/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PJ1570/1600x2133/1.jpg"
   },
   {
     "id": "0019",
@@ -187,7 +223,9 @@
     "productSize": [29, 30, 31, 32, 33, 34, 36],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/PJ1561/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PJ1561/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PJ1561/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PJ1561/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PJ1561/1600x2133/1.jpg"
   },
   {
     "id": "0020",
@@ -197,7 +235,9 @@
     "productSize": [29, 30, 31, 32, 33, 34, 36],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/JNJ109/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/JNJ109/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/JNJ109/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/JNJ109/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/JNJ109/1600x2133/1.jpg"
   },
   {
     "id": "0021",
@@ -207,7 +247,9 @@
     "productSize": [29, 30, 31, 32, 33, 36],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/JNJ57/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/JNJ57/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/JNJ57/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/JNJ57/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/JNJ57/1600x2133/1.jpg"
   },
   {
     "id": "0022",
@@ -217,7 +259,9 @@
     "productSize": [30, 31, 32, 33],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/JNJ50/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/JNJ50/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/JNJ50/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/JNJ50/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/JNJ50/1600x2133/1.jpg"
   },
   {
     "id": "0023",
@@ -227,7 +271,9 @@
     "productSize": [30, 31, 32, 33, 34],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/JNJ60/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/JNJ60/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/JNJ60/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/JNJ60/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/JNJ60/1600x2133/1.jpg"
   },
   {
     "id": "0024",
@@ -237,7 +283,9 @@
     "productSize": [28, 29, 30, 31],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/JNJ15/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/JNJ15/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/JNJ15/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/JNJ15/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/JNJ15/1600x2133/1.jpg"
   },
   {
     "id": "0025",
@@ -247,7 +295,9 @@
     "productSize": [32],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LVC134/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LVC134/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LVC134/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LVC134/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LVC134/1600x2133/1.jpg"
   },
   {
     "id": "0026",
@@ -257,7 +307,9 @@
     "productSize": [32],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LVC127/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LVC127/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LVC127/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LVC127/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LVC127/1600x2133/1.jpg"
   },
   {
     "id": "0027",
@@ -267,7 +319,9 @@
     "productSize": [30, 31, 32],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/OVM144/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/OVM144/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/OVM144/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/OVM144/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/OVM144/1600x2133/1.jpg"
   },
   {
     "id": "0028",
@@ -277,7 +331,9 @@
     "productSize": [30, 31, 32],
     "productColor": "brown",
     "productImage1": "https://intertop.ua/load/OVM143/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/OVM143/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/OVM143/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/OVM143/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/OVM143/1600x2133/1.jpg"
   },
   {
     "id": "0029",
@@ -287,7 +343,9 @@
     "productSize": [30, 31, 32, 34, 36],
     "productColor": "brown",
     "productImage1": "https://intertop.ua/load/OVM157/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/OVM157/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/OVM157/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/OVM157/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/OVM157/1600x2133/1.jpg"
   },
   {
     "id": "0030",
@@ -297,7 +355,9 @@
     "productSize": [31, 32, 33, 34, 36],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/WH3885/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/WH3885/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/WH3885/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/WH3885/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/WH3885/1600x2133/2.jpg"
   },
   {
     "id": "0031",
@@ -307,7 +367,9 @@
     "productSize": [30, 31, 32, 33, 34, 36, 38],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/WH3884/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/WH3884/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/WH3884/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/WH3884/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/WH3884/1600x2133/2.jpg"
   },
   {
     "id": "0032",
@@ -317,7 +379,9 @@
     "productSize": [30, 31, 32, 33, 34],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/PIM371/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PIM371/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PIM371/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PIM371/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PIM371/1600x2133/1.jpg"
   },
   {
     "id": "0033",
@@ -327,7 +391,9 @@
     "productSize": [30, 31, 32, 33, 34],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/PIM352/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PIM352/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PIM352/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PIM352/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PIM352/1600x2133/1.jpg"
   },
   {
     "id": "0034",
@@ -337,7 +403,9 @@
     "productSize": [30, 31, 32, 33, 34],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/PIM359/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PIM359/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PIM359/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PIM359/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PIM359/1600x2133/1.jpg"
   },
   {
     "id": "0035",
@@ -347,7 +415,9 @@
     "productSize": [30, 31, 32, 33, 34, 36],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/PIM354/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PIM354/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PIM354/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PIM354/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PIM354/1600x2133/1.jpg"
   },
   {
     "id": "0036",
@@ -357,7 +427,9 @@
     "productSize": [30, 31, 32, 33],
     "productColor": "brown",
     "productImage1": "https://intertop.ua/load/5O2284/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/5O2284/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/5O2284/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/5O2284/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/5O2284/1600x2133/2.jpg"
   },
   {
     "id": "0037",
@@ -367,7 +439,9 @@
     "productSize": [30, 31],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/5O2285/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/5O2285/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/5O2285/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/5O2285/1600x2133/MAIN.jpg",
+    "productImage2zoom": "hhttps://intertop.ua/load/5O2285/1600x2133/2.jpg"
   },
   {
     "id": "0038",
@@ -377,7 +451,9 @@
     "productSize": [30, 31, 32, 33, 34],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/5O2304/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/5O2304/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/5O2304/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/5O2304/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/5O2304/1600x2133/2.jpg"
   },
   {
     "id": "0039",
@@ -387,7 +463,9 @@
     "productSize": [33],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/5O2055/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/5O2055/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/5O2055/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/5O2055/1600x2133/MAIN.jpg",
+    "productImage2zoom": "hhttps://intertop.ua/load/5O2055/1600x2133/1.jpg"
   },
   {
     "id": "0040",
@@ -397,7 +475,9 @@
     "productSize": [30, 31, 32, 33, 34, 36, 38],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/DIM45/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM45/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM45/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM45/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM45/1600x2133/1.jpg"
   },
   {
     "id": "0041",
@@ -407,7 +487,9 @@
     "productSize": [32, 33, 36],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/DIM22/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM22/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM22/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM22/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM22/1600x2133/1.jpg"
   },
   {
     "id": "0042",
@@ -417,7 +499,9 @@
     "productSize": [28, 30, 31, 32, 33, 34, 36, 38],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/DIM41/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM41/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM41/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM41/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM41/1600x2133/1.jpg"
   },
   {
     "id": "0043",
@@ -427,7 +511,9 @@
     "productSize": [30, 31, 32, 33, 34, 36, 38],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/DIM75/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM75/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/DIM75/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM75/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM75/1600x2133/2.jpg"
   },
   {
     "id": "0044",
@@ -437,7 +523,9 @@
     "productSize": [32, 38],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/DIM23/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/DIM23/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/DIM23/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/DIM23/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/DIM23/1600x2133/1.jpg"
   },
   {
     "id": "0045",
@@ -447,7 +535,9 @@
     "productSize": [29, 30, 31, 32],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/WRA546/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/WRA546/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/WRA546/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/WRA546/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/WRA546/1600x2133/2.jpg"
   },
   {
     "id": "0046",
@@ -457,7 +547,9 @@
     "productSize": [38],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/5O2236/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/5O2236/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/5O2236/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/5O2236/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/5O2236/1600x2133/1.jpg"
   },
   {
     "id": "0047",
@@ -467,7 +559,9 @@
     "productSize": [30, 31, 33, 38],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/5O2237/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/5O2237/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/5O2237/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/5O2237/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/5O2237/1600x2133/1.jpg"
   },
   {
     "id": "0048",
@@ -477,7 +571,9 @@
     "productSize": [32, 34, 36],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/PJ1119/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PJ1119/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PJ1119/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PJ1119/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PJ1119/1600x2133/1.jpg"
   },
   {
     "id": "0049",
@@ -487,7 +583,9 @@
     "productSize": [29, 30, 31],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/WH2164/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/WH2164/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/WH2164/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/WH2164/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/WH2164/1600x2133/2.jpg"
   },
   {
     "id": "0050",
@@ -497,7 +595,9 @@
     "productSize": [29, 30],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/WH2172/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/WH2172/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/WH2172/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/WH2172/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/WH2172/1600x2133/1.jpg"
   },
   {
     "id": "0051",
@@ -507,7 +607,9 @@
     "productSize": [29, 30],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/KY359/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KY359/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KY359/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KY359/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KY359/1600x2133/1.jpg"
   },
   {
     "id": "0052",
@@ -517,7 +619,9 @@
     "productSize": [28, 29],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/KY358/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KY358/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KY358/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KY358/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KY358/1600x2133/1.jpg"
   },
   {
     "id": "0053",
@@ -527,7 +631,9 @@
     "productSize": [29, 30, 31, 32],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/KY357/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KY357/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KY357/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KY357/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KY357/1600x2133/1.jpg"
   },
   {
     "id": "0054",
@@ -537,7 +643,9 @@
     "productSize": [29],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/V2209/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/V2209/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/V2209/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/V2209/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/V2209/1600x2133/1.jpg"
   },
   {
     "id": "0055",
@@ -547,7 +655,9 @@
     "productSize": [28, 29, 30],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/N1644/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/N1644/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/N1644/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/N1644/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/N1644/1600x2133/1.jpg"
   },
   {
     "id": "0056",
@@ -557,7 +667,9 @@
     "productSize": [34, 36, 40, 42],
     "productColor": "pink",
     "productImage1": "https://intertop.ua/load/KTW918/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KTW918/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KTW918/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KTW918/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KTW918/1600x2133/1.jpg"
   },
   {
     "id": "0057",
@@ -567,7 +679,9 @@
     "productSize": [34, 36, 38, 40, 42],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/KTW809/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/KTW809/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/KTW809/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/KTW809/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/KTW809/1600x2133/1.jpg"
   },
   {
     "id": "0058",
@@ -577,7 +691,9 @@
     "productSize": [27],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LEE420/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE420/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE420/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE420/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE420/1600x2133/1.jpg"
   },
   {
     "id": "0059",
@@ -587,7 +703,9 @@
     "productSize": [42],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/SAS18/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/SAS18/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/SAS18/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/SAS18/1600x2133/MAIN.jpg",
+    "productImage2zoom": "hhttps://intertop.ua/load/SAS18/1600x2133/1.jpg"
   },
   {
     "id": "0060",
@@ -597,7 +715,9 @@
     "productSize": [34, 36],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/CLN5464/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/CLN5464/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/CLN5464/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/CLN5464/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/CLN5464/1600x2133/1.jpg"
   },
   {
     "id": "0061",
@@ -607,7 +727,9 @@
     "productSize": [40, 42, 44],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/231NS033/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/231NS033/412x550/4.jpeg"
+    "productImage2": "https://intertop.ua/load/231NS033/412x550/4.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/231NS033/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/231NS033/1600x2133/4.jpeg"
   },
   {
     "id": "0062",
@@ -617,7 +739,9 @@
     "productSize": [34, 36, 38, 40],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/206012705071/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/206012705071/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/206012705071/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/206012705071/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/206012705071/1600x2133/3.jpeg"
   },
   {
     "id": "0063",
@@ -627,7 +751,9 @@
     "productSize": [34, 36],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/14097_lightgreen/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/14097_lightgreen/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/14097_lightgreen/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/14097_lightgreen/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/14097_lightgreen/1600x2133/2.jpeg"
   },
   {
     "id": "0064",
@@ -637,7 +763,9 @@
     "productSize": [34, 36],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/14097_yellow/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/14097_yellow/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/14097_yellow/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/14097_yellow/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/14097_yellow/1600x2133/2.jpeg"
   },
   {
     "id": "0065",
@@ -647,7 +775,9 @@
     "productSize": [25, 26, 28, 29, 30],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/WN20-489_blue/412x550/3.jpeg",
-    "productImage2": "https://intertop.ua/load/WN20-489_blue/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/WN20-489_blue/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/WN20-489_blue/1600x2133/3.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/WN20-489_blue/1600x2133/2.jpeg"
   },
   {
     "id": "0066",
@@ -657,7 +787,9 @@
     "productSize": [25, 27, 28],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/WN20-492_blue/412x550/3.jpeg",
-    "productImage2": "https://intertop.ua/load/WN20-492_blue/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/WN20-492_blue/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/WN20-492_blue/1600x2133/3.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/WN20-492_blue/1600x2133/2.jpeg"
   },
   {
     "id": "0067",
@@ -667,7 +799,9 @@
     "productSize": [28, 30],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/300000164/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/300000164/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/300000164/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/300000164/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/300000164/1600x2133/2.jpeg"
   },
   {
     "id": "0068",
@@ -677,7 +811,9 @@
     "productSize": [26, 28, 30],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/44041/412x550/2.jpeg",
-    "productImage2": "https://intertop.ua/load/44041/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/44041/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/44041/1600x2133/2.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/44041/1600x2133/3.jpeg"
   },
   {
     "id": "0069",
@@ -687,7 +823,9 @@
     "productSize": [25, 26, 28, 29, 30],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/44052/412x550/2.jpeg",
-    "productImage2": "https://intertop.ua/load/44052/412x550/MAIN.jpeg"
+    "productImage2": "https://intertop.ua/load/44052/412x550/MAIN.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/44052/1600x2133/2.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/44052/1600x2133/MAIN.jpeg"
   },
   {
     "id": "0070",
@@ -697,7 +835,9 @@
     "productSize": [25, 26, 28, 29, 30],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/44095/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/44095/412x550/4.jpeg"
+    "productImage2": "https://intertop.ua/load/44095/412x550/4.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/44095/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/44095/1600x2133/4.jpeg"
   },
   {
     "id": "0071",
@@ -707,7 +847,9 @@
     "productSize": [25, 26, 28, 29, 30],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/39181490/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/39181490/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/39181490/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/39181490/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/39181490/1600x2133/3.jpeg"
   },
   {
     "id": "0072",
@@ -717,7 +859,9 @@
     "productSize": [25, 26, 28, 30],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/13885_green/412x550/3.jpeg",
-    "productImage2": "https://intertop.ua/load/13885_green/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/13885_green/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/13885_green/1600x2133/3.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/13885_green/1600x2133/2.jpeg"
   },
   {
     "id": "0073",
@@ -727,7 +871,9 @@
     "productSize": [25, 26, 28, 29, 30],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/13870_white/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/13870_white/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/13870_white/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/13870_white/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/13870_white/1600x2133/2.jpeg"
   },
   {
     "id": "0074",
@@ -737,7 +883,9 @@
     "productSize": [27, 28],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/13820_lightgray/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/13820_lightgray/412x550/1.jpeg"
+    "productImage2": "https://intertop.ua/load/13820_lightgray/412x550/1.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/13820_lightgray/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/13820_lightgray/1600x2133/1.jpeg"
   },
   {
     "id": "0075",
@@ -747,7 +895,9 @@
     "productSize": [25, 26],
     "productColor": "brown",
     "productImage1": "https://intertop.ua/load/12866_beige/412x550/1.jpeg",
-    "productImage2": "https://intertop.ua/load/12866_beige/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/12866_beige/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/12866_beige/1600x2133/1.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/12866_beige/1600x2133/3.jpeg"
   },
   
   {
@@ -758,7 +908,9 @@
     "productSize": [25, 26, 28, 30],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/BR-B230901_01/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/BR-B230901_01/412x550/1.jpeg"
+    "productImage2": "https://intertop.ua/load/BR-B230901_01/412x550/1.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/BR-B230901_01/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/BR-B230901_01/1600x2133/1.jpeg"
   },
   {
     "id": "0077",
@@ -768,7 +920,9 @@
     "productSize": [32],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/66050/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/66050/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/66050/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/66050/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/66050/1600x2133/3.jpeg"
   },
   {
     "id": "0078",
@@ -778,7 +932,9 @@
     "productSize": [25],
     "productColor": "brown",
     "productImage1": "https://intertop.ua/load/32035P/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/32035P/412x550/3.jpeg"
+    "productImage2": "https://intertop.ua/load/32035P/412x550/3.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/32035P/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/32035P/1600x2133/3.jpeg"
   },
   {
     "id": "0079",
@@ -788,7 +944,9 @@
     "productSize": [32, 36, 38, 40],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/LEE419/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE419/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE419/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE419/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE419/1600x2133/1.jpg"
   },
   {
     "id": "00780",
@@ -798,7 +956,9 @@
     "productSize": [40],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/LEE432/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE432/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE432/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE432/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE432/1600x2133/1.jpg"
   },
   {
     "id": "0081",
@@ -808,7 +968,9 @@
     "productSize": [32, 36, 38],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LEE448/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE448/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE448/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE448/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE448/1600x2133/1.jpg"
   },
   {
     "id": "0082",
@@ -818,7 +980,9 @@
     "productSize": [32, 36, 38, 40, 42],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LEE417/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE417/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE417/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE417/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE417/1600x2133/1.jpg"
   },
   {
     "id": "0083",
@@ -828,7 +992,9 @@
     "productSize": [36, 38],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/CLN11287/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/CLN11287/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/CLN11287/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/CLN11287/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/CLN11287/1600x2133/1.jpg"
   },
   {
     "id": "0084",
@@ -838,7 +1004,9 @@
     "productSize": [32, 36, 38],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/201024004041/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/201024004041/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/201024004041/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/201024004041/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/201024004041/1600x2133/2.jpeg"
   },
   {
     "id": "0085",
@@ -848,7 +1016,9 @@
     "productSize": [32, 36, 38],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/CLN10912/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/CLN10912/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/CLN10912/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/CLN10912/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/CLN10912/1600x2133/1.jpg"
   },
   {
     "id": "0086",
@@ -858,7 +1028,9 @@
     "productSize": [32],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/CLN10903/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/CLN10903/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/CLN10903/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/CLN10903/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/CLN10903/1600x2133/1.jpg"
   },
   {
     "id": "0087",
@@ -868,7 +1040,9 @@
     "productSize": [40],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/30329/412x550/3.jpeg",
-    "productImage2": "https://intertop.ua/load/30329/412x550/1.jpeg"
+    "productImage2": "https://intertop.ua/load/30329/412x550/1.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/30329/1600x2133/3.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/30329/1600x2133/1.jpeg"
   },
   {
     "id": "0088",
@@ -878,7 +1052,9 @@
     "productSize": [32, 36, 38],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/RA-92904_04/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/RA-92904_04/412x550/4.jpeg"
+    "productImage2": "https://intertop.ua/load/RA-92904_04/412x550/4.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/RA-92904_04/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/RA-92904_04/1600x2133/4.jpeg"
   },
   {
     "id": "0089",
@@ -888,7 +1064,9 @@
     "productSize": [38, 40],
     "productColor": "yellow",
     "productImage1": "https://intertop.ua/load/201024404071/412x550/3.jpeg",
-    "productImage2": "https://intertop.ua/load/201024404071/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/201024404071/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/201024404071/1600x2133/3.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/201024404071/1600x2133/2.jpeg"
   },
   {
     "id": "0090",
@@ -898,7 +1076,9 @@
     "productSize": [32],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/LEE278/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/LEE278/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/LEE278/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/LEE278/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/LEE278/1600x2133/1.jpg"
   },
   {
     "id": "0091",
@@ -908,7 +1088,9 @@
     "productSize": [36, 38, 40, 42, 44, 46],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/PE5237/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PE5237/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PE5237/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/PE5237/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PE5237/1600x2133/1.jpg"
   },
   {
     "id": "0092",
@@ -918,7 +1100,9 @@
     "productSize": [36, 38, 40, 42, 44],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/PE5243/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PE5243/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PE5243/412x550/1.jpg",
+    "productImage1zoom": "hhttps://intertop.ua/load/PE5243/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PE5243/1600x2133/1.jpg"
   },
   {
     "id": "0093",
@@ -928,7 +1112,9 @@
     "productSize": [36, 38, 40, 42, 44, 46],
     "productColor": "blue",
     "productImage1": "https://intertop.ua/load/PE5206/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/PE5206/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/PE5206/412x550/1.jpg",
+    "productImage1zoom": "hhttps://intertop.ua/load/PE5206/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/PE5206/1600x2133/1.jpg"
   },
   {
     "id": "0094",
@@ -938,7 +1124,9 @@
     "productSize": [40, 42, 44, 46],
     "productColor": "green",
     "productImage1": "https://intertop.ua/load/4X3636/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/4X3636/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/4X3636/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/4X3636/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/4X3636/1600x2133/1.jpg"
   },
   {
     "id": "0095",
@@ -948,7 +1136,9 @@
     "productSize": [36, 38, 40, 42, 44, 46],
     "productColor": "red",
     "productImage1": "https://intertop.ua/load/V3203/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/V3203/412x550/2.jpg"
+    "productImage2": "https://intertop.ua/load/V3203/412x550/2.jpg",
+    "productImage1zoom": "https://intertop.ua/load/V3203/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/V3203/1600x2133/1.jpg"
   },
   {
     "id": "0096",
@@ -958,7 +1148,9 @@
     "productSize": [36, 38, 40, 42, 44, 46],
     "productColor": "white",
     "productImage1": "https://intertop.ua/load/G081GL004.000.1233138.VR036/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/G081GL004.000.1233138.VR036/412x550/2.jpeg"
+    "productImage2": "https://intertop.ua/load/G081GL004.000.1233138.VR036/412x550/2.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/G081GL004.000.1233138.VR036/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/G081GL004.000.1233138.VR036/1600x2133/2.jpeg"
   },
   {
     "id": "0097",
@@ -968,7 +1160,9 @@
     "productSize": [32, 33, 34, 36, 38, 40],
     "productColor": "gray",
     "productImage1": "https://intertop.ua/load/QZ3184/412x550/MAIN.jpg",
-    "productImage2": "https://intertop.ua/load/QZ3184/412x550/1.jpg"
+    "productImage2": "https://intertop.ua/load/QZ3184/412x550/1.jpg",
+    "productImage1zoom": "https://intertop.ua/load/QZ3184/1600x2133/MAIN.jpg",
+    "productImage2zoom": "https://intertop.ua/load/QZ3184/1600x2133/1.jpg"
   },
   {
     "id": "0098",
@@ -978,7 +1172,9 @@
     "productSize": [36],
     "productColor": "gray",
     "productImage1": "https://i.ebayimg.com/images/g/Kj4AAOSwzJ5Xabn2/s-l1600.jpg",
-    "productImage2": "https://i.ebayimg.com/images/g/-3gAAOSwNuxXabn4/s-l1600.jpg"
+    "productImage2": "https://i.ebayimg.com/images/g/-3gAAOSwNuxXabn4/s-l1600.jpg",
+    "productImage1zoom": "https://i.ebayimg.com/images/g/Kj4AAOSwzJ5Xabn2/s-l1600.jpg",
+    "productImage2zoom": "https://i.ebayimg.com/images/g/-3gAAOSwNuxXabn4/s-l1600.jpg"
   },
   {
     "id": "0099",
@@ -988,7 +1184,9 @@
     "productSize": [33],
     "productColor": "black",
     "productImage1": "https://img.vitkac.com/uploads/product_thumb/SPODNIE%20SHIONER-A%2000CVM-900/up/4.jpg",
-    "productImage2": "https://img.vitkac.com/uploads/product_thumb/SPODNIE%20SHIONER-A%2000CVM-900/up/5.jpg"
+    "productImage2": "https://img.vitkac.com/uploads/product_thumb/SPODNIE%20SHIONER-A%2000CVM-900/up/5.jpg",
+    "productImage1zoom": "https://img.vitkac.com/uploads/product_thumb/SPODNIE%20SHIONER-A%2000CVM-900/up/4.jpg",
+    "productImage2zoom": "https://img.vitkac.com/uploads/product_thumb/SPODNIE%20SHIONER-A%2000CVM-900/up/5.jpg"
   },
   {
     "id": "0100",
@@ -998,6 +1196,8 @@
     "productSize": [80],
     "productColor": "black",
     "productImage1": "https://intertop.ua/load/48258128MH/412x550/MAIN.jpeg",
-    "productImage2": "https://intertop.ua/load/48258128MH/412x550/1.jpeg"
+    "productImage2": "https://intertop.ua/load/48258128MH/412x550/1.jpeg",
+    "productImage1zoom": "https://intertop.ua/load/48258128MH/1600x2133/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/48258128MH/1600x2133/1.jpeg"
   }
 ]

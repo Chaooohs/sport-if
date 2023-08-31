@@ -1,4 +1,6 @@
 //=========================================================
+import { modalClose } from "./functions.js";
+
 const el = (selector) => document.querySelector(selector);
 
 // rendering of cards
@@ -11,6 +13,8 @@ export class RenderCard {
       this.productColor = option.productColor,
       this.productImage1 = option.productImage1,
       this.productImage2 = option.productImage2,
+      this.productImage1zoom = option.productImage1zoom,
+      this.productImage2zoom = option.productImage2zoom,
       this.productCounter = option.productCounter
   }
 
@@ -76,8 +80,11 @@ export class RenderCard {
     if (id === this.id) {
       el(".md__content").setAttribute("data-id", `${this.id}`)
       el(".md__image").setAttribute("src", this.productImage1);
+      el(".md__image").setAttribute("data-zoom", this.productImage1zoom);
       el(".md__img-front").setAttribute("src", this.productImage1);
+      el(".md__img-front").setAttribute("data-zoom", this.productImage1zoom);
       el(".md__img-back").setAttribute("src", this.productImage2);
+      el(".md__img-back").setAttribute("data-zoom", this.productImage2zoom);
       el(".md__product-name").innerText = this.productName;
       el(".md__product-id").innerText = this.id;
       el(".md__product-price").innerHTML = this.productCost;
@@ -98,6 +105,20 @@ export class RenderCard {
 // changing images in a modal window
 el('.md__block-image').addEventListener("click", (e) => {
   if (e.target.classList.contains("md__img-back") || e.target.classList.contains("md__img-front")) {
-    el(".md__image").setAttribute("src", e.target.currentSrc)
+    el(".md__image").setAttribute("src", e.target.currentSrc);
+    el(".md__image").setAttribute("data-zoom", e.target.dataset.zoom);
   }
 });
+
+
+el('.md__image').addEventListener("click", (e) => {
+  el('.md-zoom').classList.remove('hide')
+  el('.md-zoom__image').setAttribute('src', e.target.dataset.zoom)
+})
+
+
+el('.md-zoom').addEventListener('click', (e) => {
+  if (e.target.closest('.md-close')) {
+    el(".md-zoom").classList.add("hide");
+  }
+})

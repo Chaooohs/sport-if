@@ -6,12 +6,12 @@ const el = (selector) => document.querySelector(selector);
 
 
 // import of a file with a product catalog
-async function req(url) {
+async function request(url) {
   const data = await fetch(url)
   return await data.json()
 }
 
-req('./public/product-list.json')
+request('./public/product-list.json')
   .then((json) => outJson(json))
   .catch((e) => console.error('error'))
 
