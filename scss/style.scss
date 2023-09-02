@@ -944,8 +944,34 @@ footer {
   }
 
   &__image {
-    max-width: 469px;
+    position: relative;
     margin-bottom: 100px;
+    cursor: pointer;
+  }
+
+  &__block-plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s linear;
+  }
+
+  &__block-plus.hide {
+    display: none;
+    transition: all .5s linear;
+  }
+
+  &__image-plus {
+    width: 60px;
+  }
+
+  &__image-lg {
+    max-width: 469px;
   }
 
   &__block-image {
@@ -1367,4 +1393,5 @@ footer {
   background: $white;
   border-radius: 50px;
 }
+
 /* #endregion */

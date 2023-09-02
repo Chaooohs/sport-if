@@ -1,5 +1,5 @@
 //===========================================================
-import { request, filter, launch, modalClose, redirectPage, searchFilter, menuBurger } from "./functions.js";
+import { request, filter, launch, modalClose, callingRedirect, searchFilter, menuBurger } from "./functions.js";
 
 const el = (selector) => document.querySelector(selector);
 const all = (selectorAll) => document.querySelectorAll(selectorAll);
@@ -51,18 +51,7 @@ function outJson(json) {
 
 
 // calling of function redirection
-el('[data-tab="shorts"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
-el('[data-tab="pants"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
-el('[data-tab="shirts"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
-el('[data-tab="accessories"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
+el('.header__nav').addEventListener('click', callingRedirect)
 
 
 // open side menu

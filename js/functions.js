@@ -18,6 +18,22 @@ export const redirectPage = (dataType) => {
   window.location.href = "/catalog.html";
 }
 
+
+// calling of function redirection
+export function callingRedirect(e) {
+  switch (e.target.dataset.tab) {
+
+    case 'shorts': redirectPage('shorts')
+      break
+    case 'pants': redirectPage('pants')
+      break
+    case 'shirts': redirectPage('shirts')
+      break
+    case 'accessories': redirectPage('accessories')
+      break
+  }
+}
+
 // mobile menu active
 export const menuBurger = () => {
   el(".burger").classList.toggle("active");

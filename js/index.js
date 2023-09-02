@@ -1,5 +1,5 @@
 //===================================================================
-import { request, modalClose, menuBurger, redirectPage, homepageСardFilter, searchFilter } from "./functions.js";
+import { request, modalClose, menuBurger, redirectPage, homepageСardFilter, searchFilter, callingRedirect } from "./functions.js";
 import { RenderCard } from "./constructor.js";
 
 const el = (selector) => document.querySelector(selector);
@@ -54,18 +54,10 @@ el('[data-button="shorts"]').addEventListener('click', (e) => {
 el('[data-button="pants"]').addEventListener('click', (e) => {
   redirectPage(e.target.dataset.button)
 })
-el('[data-tab="shorts"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
-el('[data-tab="pants"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
-el('[data-tab="shirts"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
-el('[data-tab="accessories"]').addEventListener('click', (e) => {
-  redirectPage(e.target.dataset.tab)
-})
+
+
+// calling of function redirection
+el('.header__nav').addEventListener('click', callingRedirect)
 
 
 // search set function global
@@ -87,3 +79,16 @@ el('.header__search-inp').addEventListener('keydown', (e) => {
     searchFilter(searchValue, product, datalist)
   }
 })
+
+
+var swiper = new Swiper(".myswiper", {
+  zoom: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});

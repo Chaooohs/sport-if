@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SportIf</title>
   <link rel="stylesheet" href="./css/normalise.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
 </head>
@@ -188,7 +189,12 @@
         </button>
         <div class="grid">
           <div class="md__left">
-            <img class="md__image sc-image" src="" alt="product">
+            <div class="md__image">
+              <img class="md__image-lg sc-image" src="" alt="product">
+              <div class="md__block-plus hide">
+                <img class="md__image-plus" src="./img/svg/search-plus.svg" alt="plus">
+              </div>
+            </div>
             <div class="md__block-image">
               <img class="md__img-front" src="" alt="front">
               <img class="md__img-back" src="" alt="back">
@@ -257,15 +263,32 @@
         </div>
       </div>
     </div>
-    <div class="md-zoom hide">
-      <div class="md-zoom__body">
-        <div class="md-zoom__in">
-          <button class="md-zoom__close md-close">
-            <img src="./img/svg/cloce.svg" alt="close">
-          </button>
-          <img src="" alt="product" class="md-zoom__image">
+    <div class="md-zoom hide"> <!-- cart zoom modal -->
+      <button class="md-zoom__close md-close">
+        <img src="./img/svg/cloce.svg" alt="close">
+      </button>
+
+      <div style="--swiper-navigation-color: #a04956;"
+        class="swiper-container myswiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container">
+              <img src="" alt="img" id="md-zoom-item-one">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-zoom-container">
+              <img src="" alt="img" id="md-zoom-item-two">
+            </div>
+          </div>
+
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+
     </div>
     <div class="md sc hide"> <!-- shopping cart modal -->
       <div class="sc__content md__content">
@@ -363,6 +386,7 @@
   </div>
 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/index.js" type="module"></script>
   <script src="./js/shopcart.js" type="module"></script>
 </body>

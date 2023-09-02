@@ -1,6 +1,4 @@
 //=========================================================
-import { modalClose } from "./functions.js";
-
 const el = (selector) => document.querySelector(selector);
 
 // rendering of cards
@@ -79,8 +77,7 @@ export class RenderCard {
     // filling modal window
     if (id === this.id) {
       el(".md__content").setAttribute("data-id", `${this.id}`)
-      el(".md__image").setAttribute("src", this.productImage1);
-      el(".md__image").setAttribute("data-zoom", this.productImage1zoom);
+      el(".md__image-lg").setAttribute("src", this.productImage1);
       el(".md__img-front").setAttribute("src", this.productImage1);
       el(".md__img-back").setAttribute("src", this.productImage2);
       el(".md__product-name").innerText = this.productName;
@@ -105,19 +102,32 @@ export class RenderCard {
 // changing images in a modal window
 el('.md__block-image').addEventListener("click", (e) => {
   if (e.target.classList.contains("md__img-back") || e.target.classList.contains("md__img-front")) {
-    el(".md__image").setAttribute("src", e.target.currentSrc);
+    el(".md__image-lg").setAttribute("src", e.target.currentSrc);
   }
 });
 
 
-el('.md__image').addEventListener("click", (e) => {
+// opening zoom icon
+el('.md__image').addEventListener("mouseover", () => {
+  el('.md__block-plus').classList.remove('hide')
+})
+
+
+// closing zoom icon
+el('.md__image').addEventListener("mouseout", () => {
+  el('.md__block-plus').classList.add('hide')
+})
+
+
+// opening modal zoom window
+el('.md__image').addEventListener("click", () => {
   el('.md-zoom').classList.remove('hide')
 })
 
 
+// closing modal zoom window
 el('.md-zoom').addEventListener('click', (e) => {
   if (e.target.closest('.md-close')) {
     el(".md-zoom").classList.add("hide");
   }
 })
-
