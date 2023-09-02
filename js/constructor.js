@@ -22,11 +22,11 @@ export class RenderCard {
             <img class="product__image sc-image" src="${this.productImage1}" id="${this.id}" alt="img ">
             <h4 class="product__name sc-title">${this.productName}</h4>
             <div class="product__rating">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
             </div>
             <div class="product__price">
               <span class="product__low text_sm">As low as </span>
@@ -46,17 +46,17 @@ export class RenderCard {
     const card = `
           <div class="sc__card sc-card" data-id="${this.id}">
             <button class="sc__del-btn sc-del" data-del="del">
-              <img src="./img/svg/cloce.svg" alt="close">
+              <img src="../img/svg/cloce.svg" alt="close">
             </button>
             <img class="sc__product-image sc-image" src="${this.productImage1}" alt="${this.productName}">
             <h1 class="md__product-name sc__product-name">${this.productName}</h1>
             <span class="modal__item sc__product-id sc-id">item #${this.id}</span>
             <button class="sc__counter-remove sc-minus">
-              <img src="./img/svg/minus.svg" alt="close" data-action="minus">
+              <img src="../img/svg/minus.svg" alt="close" data-action="minus">
             </button>
             <div class="sc__counter sc-counter">${this.productCounter}</div>
             <button class="sc__counter-add sc-plus">
-              <img src="./img/svg/plus.svg" alt="close" data-action="plus">
+              <img src="../img/svg/plus.svg" alt="close" data-action="plus">
             </button>
             <span class="sc__cost text_sm modal__price">cost:</span>
             <div class="sc__product-price text_sm modal__price">

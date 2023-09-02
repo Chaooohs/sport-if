@@ -22,24 +22,24 @@ function outJson(json) {
 
   switch (productType) {
     case 'shorts':
-      const shorts = filter(json, "productType", "shorts");
       // breadcrumbs
       el('.breadcrumbs-end').innerText = 'shorts'
+      const shorts = filter(json, "productType", "shorts");
       launch(shorts)
       break
     case 'pants':
-      const pants = filter(json, "productType", "pants");
       el('.breadcrumbs-end').innerText = 'pants'
+      const pants = filter(json, "productType", "pants");
       launch(pants)
       break
     case 'shirts':
-      const shirts = filter(json, "productType", "shirts");
       el('.breadcrumbs-end').innerText = 'shirts'
+      const shirts = filter(json, "productType", "shirts");
       launch(shirts)
       break
     case 'accessories':
-      const accessories = filter(json, "productType", "accessories");
       el('.breadcrumbs-end').innerText = 'accessories'
+      const accessories = filter(json, "productType", "accessories");
       launch(accessories)
       break
     default:

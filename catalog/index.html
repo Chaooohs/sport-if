@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog</title>
-  <link rel="stylesheet" href="./css/normalise.css">
+  <link rel="stylesheet" href="../css/normalise.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/media.css">
 </head>
 
 <body>
@@ -17,22 +17,22 @@
     <header>
       <div class="wrap">
         <div class="header">
-          <a href="./index.html" class="header__logo">
-            <img src="./img/svg/logo.svg" alt="logo">
+          <a href="../index.html" class="header__logo">
+            <img src="../img/svg/logo.svg" alt="logo">
           </a>
           <button class="header__shop sc-open" data-shop-open="open">
             <iconify-icon icon="subway:bag" width="32" height="32" class="header__bag"></iconify-icon>
             <span class="header__counter">0</span>
           </button>
           <div class="header__nav" id="headerNav">
-            <span data-tab="shorts" class="header__nav-link" href="shorts.html">shorts</span>
-            <span data-tab="pants" class="header__nav-link" href="pants.html">pants</span>
-            <span data-tab="shirts" class="header__nav-link" href="#!">shirts</span>
-            <span data-tab="accessories" class="header__nav-link" href="#!">accessories</span>
-            <span data-tab="sale" class="header__nav-link" href="#!">sale</span>
+            <span data-tab="shorts" class="header__nav-link">shorts</span>
+            <span data-tab="pants" class="header__nav-link">pants</span>
+            <span data-tab="shirts" class="header__nav-link">shirts</span>
+            <span data-tab="accessories" class="header__nav-link">accessories</span>
+            <span data-tab="sale" class="header__nav-link">sale</span>
             <div class="header__search" id="headerSearch">
               <button class="header__search-btn">
-                <img src="./img/svg/search.svg" alt="search">
+                <img src="../img/svg/search.svg" alt="search">
               </button>
               <input class="header__search-inp" type="text" list="product" placeholder="search entire store here">
               <datalist id="product" class="header__search-list">
@@ -55,13 +55,13 @@
         <div class="tree">
           <div class="breadcrumbs">
             <ul>
-              <img src="./img/svg/home.svg" alt="home" class="breadcrumbs__home">
+              <img src="../img/svg/home.svg" alt="home" class="breadcrumbs__home">
               <li>
                 <a href="./index.html" class="breadcrumbs-text">
                   <span>home</span>
                 </a>
               </li>
-              <img src="./img/svg/right-arrow.svg" alt="arrow" class="breadcrumbs__arrow">
+              <img src="../img/svg/right-arrow.svg" alt="arrow" class="breadcrumbs__arrow">
               <li class="breadcrumbs-text">
                 <span class="breadcrumbs-end">
                   <!-- adding text -->
@@ -82,7 +82,7 @@
             <div class="filter__box">
               <div class="filter__header">
                 <h3 class="filter__heading">size</h3>
-                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+                <img src="../img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
               </div>
               <div class="filter__content" id="openSize">
                 <button class="filter__subfilter_all">all</button>
@@ -94,7 +94,7 @@
             <div class="filter__box">
               <div class="filter__header">
                 <h3 class="filter__heading">color</h3>
-                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+                <img src="../img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
               </div>
               <div class="filter__content" id="openColor">
                 <button class="filter__subfilter_all">all</button>
@@ -106,21 +106,21 @@
             <div class="filter__box">
               <div class="filter__header">
                 <h3 class="filter__heading">inseam</h3>
-                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+                <img src="../img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
               </div>
               <div class="filter__content"></div>
             </div>
             <div class="filter__box">
               <div class="filter__header">
                 <h3 class="filter__heading">sustainable fabric</h3>
-                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+                <img src="../img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
               </div>
               <div class="filter__content"></div>
             </div>
             <div class="filter__box">
               <div class="filter__header">
                 <h3 class="filter__heading">collections</h3>
-                <img src="./img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
+                <img src="../img/svg/up-arrow.svg" alt="arrow" class="filter__icon">
               </div>
               <div class="filter__content"></div>
             </div>
@@ -137,14 +137,14 @@
     <div class="md hide"> <!-- cart modal -->
       <div class="md__content sc-card">
         <button class="close md-close">
-          <img src="./img/svg/cloce.svg" alt="close">
+          <img src="../img/svg/cloce.svg" alt="close">
         </button>
         <div class="grid">
           <div class="md__left">
             <div class="md__image">
               <img class="md__image-lg sc-image" src="" alt="product">
               <div class="md__block-plus hide">
-                <img class="md__image-plus" src="./img/svg/search-plus.svg" alt="plus">
+                <img class="md__image-plus" src="../img/svg/search-plus.svg" alt="plus">
               </div>
             </div>
             <div class="md__block-image">
@@ -159,11 +159,11 @@
               <span class="md__product-id sc-id"></span>
             </div>
             <div class="product__rating md__rating">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
-              <img src="./img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
+              <img src="../img/svg/star-yellow.svg" alt="star">
             </div>
             <div class="md__low">As low as</div>
             <div class="md__cost">
@@ -186,27 +186,27 @@
             </div>
             <div class="md__social">
               <a href="https://uk-ua.facebook.com/">
-                <img src="./img/svg/facebook.svg" alt="facebook">
+                <img src="../img/svg/facebook.svg" alt="facebook">
               </a>
               <a href="https://twitter.com/?lang=uk">
-                <img src="./img/svg/twitter.svg" alt="twitter">
+                <img src="../img/svg/twitter.svg" alt="twitter">
               </a>
               <a href="https://www.pinterest.com/">
-                <img src="./img/svg/pinterest.svg" alt="pinterest">
+                <img src="../img/svg/pinterest.svg" alt="pinterest">
               </a>
               <a href="#">
-                <img src="./img/svg/link.svg" alt="link">
+                <img src="../img/svg/link.svg" alt="link">
               </a>
             </div>
             <div class="md__copypaster">
               <h2 class="md__worry">- Worry Free Shopping -</h2>
               <div class="md__bellow">
                 <div class="md__copy-delivery">
-                  <img src="./img/svg/free-delivery.svg" alt="img">
+                  <img src="../img/svg/free-delivery.svg" alt="img">
                   <span class="modal__copy-text">free priority shipping on ofders $99+*</span>
                 </div>
                 <div class="md__copy-exchange">
-                  <img src="./img/svg/exchange.svg" alt="img">
+                  <img src="../img/svg/exchange.svg" alt="img">
                   <span class="modal__copy-text">free returns & exchanges*</span>
                 </div>
               </div>
@@ -217,7 +217,7 @@
     </div>
     <div class="md-zoom hide"> <!-- cart zoom modal -->
       <button class="md-zoom__close md-close">
-        <img src="./img/svg/cloce.svg" alt="close">
+        <img src="../img/svg/cloce.svg" alt="close">
       </button>
 
       <div style="--swiper-navigation-color: #a04956;"
@@ -250,7 +250,7 @@
             <span class="sc__empty">is empty</span>
           </h1>
           <button class="sc__close">
-            <img src="./img/svg/cloce.svg" alt="close">
+            <img src="../img/svg/cloce.svg" alt="close">
           </button>
         </div>
         <div class="wrap">
@@ -331,7 +331,7 @@
       </div>
       <div class="scroll-up-btn">
         <a href="#">
-          <img src="./img/svg/arrow-up.svg" alt="arrow">
+          <img src="../img/svg/arrow-up.svg" alt="arrow">
         </a>
       </div>
     </footer>
@@ -339,8 +339,8 @@
 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./js/catalog.js" type="module"></script>
-  <script src="./js/shopcart.js" type="module"></script>
+  <script src="../js/catalog.js" type="module"></script>
+  <script src="../js/shopcart.js" type="module"></script>
 </body>
 
 </html>
