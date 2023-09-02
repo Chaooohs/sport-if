@@ -5,6 +5,13 @@ const el = (selector) => document.querySelector(selector);
 const all = (selectorAll) => document.querySelectorAll(selectorAll);
 
 
+// import of a file with a product catalog
+export async function request(url) {
+  const data = await fetch(url)
+  return await data.json()
+}
+
+
 // function of redirection to the product catalog
 export const redirectPage = (dataType) => {
   localStorage.setItem("__product__", JSON.stringify(dataType));

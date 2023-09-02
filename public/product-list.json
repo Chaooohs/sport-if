@@ -705,7 +705,7 @@
     "productImage1": "https://intertop.ua/load/SAS18/412x550/MAIN.jpg",
     "productImage2": "https://intertop.ua/load/SAS18/412x550/1.jpg",
     "productImage1zoom": "https://intertop.ua/load/SAS18/1600x2133/MAIN.jpg",
-    "productImage2zoom": "hhttps://intertop.ua/load/SAS18/1600x2133/1.jpg"
+    "productImage2zoom": "https://intertop.ua/load/SAS18/1600x2133/1.jpg"
   },
   {
     "id": "0060",
@@ -933,8 +933,8 @@
     "productColor": "brown",
     "productImage1": "https://intertop.ua/load/32035P/412x550/MAIN.jpeg",
     "productImage2": "https://intertop.ua/load/32035P/412x550/3.jpeg",
-    "productImage1zoom": "https://intertop.ua/load/32035P/1600x2133/MAIN.jpeg",
-    "productImage2zoom": "https://intertop.ua/load/32035P/1600x2133/3.jpeg"
+    "productImage1zoom": "https://intertop.ua/load/32035P/MAIN.jpeg",
+    "productImage2zoom": "https://intertop.ua/load/32035P/3.jpeg"
   },
   {
     "id": "0079",

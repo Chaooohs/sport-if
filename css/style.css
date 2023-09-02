@@ -315,7 +315,7 @@ input[type=checkbox]:checked + label {
 .two__product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 55px;
+  gap: 20px;
   margin-top: 20px;
 }
 .two__btn {
@@ -985,22 +985,11 @@ footer {
   z-index: 10000;
   background-color: #fff;
 }
-.md-zoom__body {
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.md-zoom__in {
-  position: relative;
-  height: 100vh;
-}
 .md-zoom__close {
   position: absolute;
   top: 30px;
   left: 20px;
+  z-index: 10;
   background-color: #fff;
   border-radius: 50px;
 }
@@ -1156,3 +1145,32 @@ footer {
 }
 
 /* #endregion */
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-pagination-fraction {
+  color: #a04956;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px;
+}
+
+.swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, 20px);
+  background: #fff;
+  border-radius: 50px;
+}
+
+.swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 20px);
+  background: #fff;
+  border-radius: 50px;
+}

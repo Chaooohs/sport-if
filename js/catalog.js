@@ -1,16 +1,11 @@
 //===========================================================
-import { filter, launch, modalClose, redirectPage, searchFilter, menuBurger } from "./functions.js";
+import { request, filter, launch, modalClose, redirectPage, searchFilter, menuBurger } from "./functions.js";
 
 const el = (selector) => document.querySelector(selector);
 const all = (selectorAll) => document.querySelectorAll(selectorAll);
 
 
 // import of a file with a product catalog
-async function request(url) {
-  const data = await fetch(url)
-  return await data.json()
-}
-
 request('/public/product-list.json')
   .then((json) => outJson(json))
   .catch((e) => console.error('error'))
@@ -28,24 +23,24 @@ function outJson(json) {
   switch (productType) {
     case 'shorts':
       const shorts = filter(json, "productType", "shorts");
-      launch(shorts)
       // breadcrumbs
       el('.breadcrumbs-end').innerText = 'shorts'
+      launch(shorts)
       break
     case 'pants':
       const pants = filter(json, "productType", "pants");
-      launch(pants)
       el('.breadcrumbs-end').innerText = 'pants'
+      launch(pants)
       break
     case 'shirts':
       const shirts = filter(json, "productType", "shirts");
-      launch(shirts)
       el('.breadcrumbs-end').innerText = 'shirts'
+      launch(shirts)
       break
     case 'accessories':
       const accessories = filter(json, "productType", "accessories");
-      launch(accessories)
       el('.breadcrumbs-end').innerText = 'accessories'
+      launch(accessories)
       break
     default:
       launch(productType)
@@ -106,3 +101,16 @@ el('.header__search-inp').addEventListener('keydown', (e) => {
     searchFilter(searchValue, product, datalist)
   }
 })
+
+
+var swiper = new Swiper(".myswiper", {
+  zoom: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});

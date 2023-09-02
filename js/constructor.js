@@ -82,9 +82,7 @@ export class RenderCard {
       el(".md__image").setAttribute("src", this.productImage1);
       el(".md__image").setAttribute("data-zoom", this.productImage1zoom);
       el(".md__img-front").setAttribute("src", this.productImage1);
-      el(".md__img-front").setAttribute("data-zoom", this.productImage1zoom);
       el(".md__img-back").setAttribute("src", this.productImage2);
-      el(".md__img-back").setAttribute("data-zoom", this.productImage2zoom);
       el(".md__product-name").innerText = this.productName;
       el(".md__product-id").innerText = this.id;
       el(".md__product-price").innerHTML = this.productCost;
@@ -97,6 +95,8 @@ export class RenderCard {
         div.innerText = size;
         el(".md__size-block").append(div);
       }
+      el('#md-zoom-item-one').setAttribute('src', this.productImage1zoom)
+      el('#md-zoom-item-two').setAttribute('src', this.productImage2zoom)
     }
   }
 }
@@ -106,14 +106,12 @@ export class RenderCard {
 el('.md__block-image').addEventListener("click", (e) => {
   if (e.target.classList.contains("md__img-back") || e.target.classList.contains("md__img-front")) {
     el(".md__image").setAttribute("src", e.target.currentSrc);
-    el(".md__image").setAttribute("data-zoom", e.target.dataset.zoom);
   }
 });
 
 
 el('.md__image').addEventListener("click", (e) => {
   el('.md-zoom').classList.remove('hide')
-  el('.md-zoom__image').setAttribute('src', e.target.dataset.zoom)
 })
 
 
@@ -122,3 +120,4 @@ el('.md-zoom').addEventListener('click', (e) => {
     el(".md-zoom").classList.add("hide");
   }
 })
+

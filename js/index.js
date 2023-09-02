@@ -1,16 +1,11 @@
 //===================================================================
-import { modalClose, menuBurger, redirectPage, homepageСardFilter, searchFilter } from "./functions.js";
+import { request, modalClose, menuBurger, redirectPage, homepageСardFilter, searchFilter } from "./functions.js";
 import { RenderCard } from "./constructor.js";
 
 const el = (selector) => document.querySelector(selector);
 
 
 // import of a file with a product catalog
-async function request(url) {
-  const data = await fetch(url)
-  return await data.json()
-}
-
 request('./public/product-list.json')
   .then((json) => outJson(json))
   .catch((e) => console.error('error'))
