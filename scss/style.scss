@@ -161,7 +161,7 @@ input[type="checkbox"]:checked+label {
   justify-self: center;
   column-gap: 4px;
 
-  border: none;
+  border: 1px solid $DrisheenColor;
   background: $DrisheenColor;
 
   font-size: 18px;
@@ -582,6 +582,7 @@ footer {
     display: block;
     width: 260px;
     height: 43px;
+    color: $DrisheenColor;
   }
 
   &__input::placeholder {
@@ -595,6 +596,7 @@ footer {
   &__btn {
     width: 167px;
     height: 43px;
+    cursor: pointer;
   }
 }
 

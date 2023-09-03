@@ -1,5 +1,5 @@
 //===========================================================
-import { request, filter, launch, modalClose, callingRedirect, searchFilter, menuBurger } from "./functions.js";
+import { request, filter, launch, modalClose, callingRedirect, searchFilter, isEmail, menuBurger } from "./functions.js";
 
 const el = (selector) => document.querySelector(selector);
 const all = (selectorAll) => document.querySelectorAll(selectorAll);
@@ -42,6 +42,11 @@ function outJson(json) {
       const accessories = filter(json, "productType", "accessories");
       launch(accessories)
       break
+    case 'sale':
+      el('.breadcrumbs-end').innerText = 'sale'
+      const sale = filter(json, "productType", "sale");
+      launch(sale)
+      break
     default:
       launch(productType)
       el('.breadcrumbs-end').innerText = 'search'
@@ -81,15 +86,19 @@ el('.header__search-inp').addEventListener('input', (e) => {
   searchFilter(searchValue, product, datalist)
 })
 el('.header__search-btn').addEventListener('click', () => {
-  window.location.href = '/catalog.html';
+  window.location.href = './index.html';
   searchFilter(searchValue, product, datalist)
 })
 el('.header__search-inp').addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
-    window.location.href = '/catalog.html';
+    window.location.href = './index.html';
     searchFilter(searchValue, product, datalist)
   }
 })
+
+
+// email verification
+el('.footer__btn').addEventListener('click', isEmail)
 
 
 var swiper = new Swiper(".myswiper", {

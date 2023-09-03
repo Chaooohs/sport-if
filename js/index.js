@@ -1,5 +1,5 @@
 //===================================================================
-import { request, modalClose, menuBurger, redirectPage, homepageСardFilter, searchFilter, callingRedirect } from "./functions.js";
+import { request, modalClose, menuBurger, redirectPage, homepageСardFilter, searchFilter, callingRedirect, isEmail } from "./functions.js";
 import { RenderCard } from "./constructor.js";
 
 const el = (selector) => document.querySelector(selector);
@@ -70,15 +70,19 @@ el('.header__search-inp').addEventListener('input', (e) => {
   searchFilter(searchValue, product, datalist)
 })
 el('.header__search-btn').addEventListener('click', () => {
-  window.location.href = '/catalog.html';
+  window.location.href = './catalog/index.html';
   searchFilter(searchValue, product, datalist)
 })
 el('.header__search-inp').addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {
-    window.location.href = '/catalog.html';
+    window.location.href = './catalog/index.html';
     searchFilter(searchValue, product, datalist)
   }
 })
+
+
+// email verification
+el('.footer__btn').addEventListener('click', isEmail)
 
 
 var swiper = new Swiper(".myswiper", {

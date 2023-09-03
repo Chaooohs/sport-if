@@ -31,6 +31,8 @@ export function callingRedirect(e) {
       break
     case 'accessories': redirectPage('accessories')
       break
+    case 'sale': redirectPage('sale')
+      break
   }
 }
 
@@ -46,9 +48,11 @@ export const menuBurger = () => {
 // filter function
 export function filter(arr, prop, value) {
   let result = []
+
   for (let item of arr) {
     if (String(item[prop]).includes(value)) result.push(item)
   }
+
   return result
 }
 
@@ -62,7 +66,7 @@ export function pagination(arr) {
   el('.product-pagination').innerHTML = ''
 
   let items = [];
- 
+
   for (let i = 1; i <= itemOfPagination; i++) {
     let a = document.createElement('a');
     a.innerHTML = i;
@@ -105,7 +109,6 @@ export function pagination(arr) {
 
 // render function
 export function renderElement(item) {
-
   let render = new RenderCard(item)
 
   // call card rendering function for directories
@@ -124,8 +127,8 @@ export function renderElement(item) {
 let selectColor;
 
 export function colorsFiltering(e, catalog) {
-
   let buttonC = e.target.closest('button');
+
   if (!buttonC) return;
 
   if (selectColor) selectColor.classList.remove('active')
@@ -154,8 +157,8 @@ export function colorsFiltering(e, catalog) {
 let selectSize;
 
 export function sizesFiltering(e, catalog) {
-
   let buttonS = e.target.closest('button');
+
   if (!buttonS) return;
 
   if (selectSize) selectSize.classList.remove('active')
@@ -183,9 +186,7 @@ export function sizesFiltering(e, catalog) {
 
 // colors filter function for sidebar
 export function colorsFilter(product) {
-
   el("#colorFilterList").innerHTML = ''
-
   let allColors = [];
 
   for (let item of product) {
@@ -206,9 +207,7 @@ export function colorsFilter(product) {
 
 // sizes filter function for sidebar
 export function sizesFilter(product) {
-
   el("#sizeFilterList").innerHTML = ''
-
   let allSizes = [];
 
   for (let item of product) {
@@ -236,8 +235,8 @@ export function sizesFilter(product) {
 
 // homepage card filter
 export function homepageСardFilter(product) {
-
   let cardsProduct = [];
+
   for (let i = 0; i < 4; i++) {
     let cardsProductGap = Math.floor(Math.random() * product.length);
     cardsProduct.push(cardsProductGap);
@@ -253,7 +252,6 @@ export function homepageСardFilter(product) {
 
 // function to calculate the cost of good in the shop cart
 export function calcCostItemsSC(e) {
-
   const shopCart = e.target.closest('.sc-card');
   let counter = shopCart.querySelector(".sc-counter")
   let productCost = shopCart.querySelector("[data-cost]")
@@ -275,7 +273,6 @@ export function calcCostItemsSC(e) {
 
 // function to calculate the total cost of goods in the shop cart
 export function calcTotalCostSC() {
-
   let totalPrice = 0;
 
   all(".sc__card").forEach((item) => totalPrice += parseInt(item.querySelector(".sc-item-price").innerText));
@@ -290,13 +287,16 @@ export const statusShopCart = (item) => el(".header__counter").innerText = item.
 
 // shop cart window title
 export const titleShopCart = (mainElement) => {
+
   if (mainElement.children.length > 0) el(".sc__empty").classList.add("hide");
   else el(".sc__empty").classList.remove("hide");
+
 }
 
 
 // close modal window function
 export const modalClose = (e) => {
+
   if (e.target.closest('.md-close') || !e.target.closest('.md__content')) {
     el(".md").classList.add("hide");
     el("body").classList.remove("active");
@@ -306,6 +306,7 @@ export const modalClose = (e) => {
 
 //close modal window Shop Cart function
 export const modalShopClose = (e) => {
+
   if (e.target.closest('.sc__close') || !e.target.closest('.sc__content')) {
     el(".sc").classList.add("hide");
     el("body").classList.remove("active");
@@ -315,7 +316,6 @@ export const modalShopClose = (e) => {
 
 // search set function global
 export function searchFilter(value, product, datalist) {
-
   const rgx = new RegExp(value, 'i')
   let searchFilterData = product.filter((item) => rgx.test(item.productName)).slice(0, 10)
 
@@ -338,7 +338,6 @@ export function searchFilter(value, product, datalist) {
 
 // search function in catalog
 export function searcgCatalogValue(value, product) {
-
   const rgx = new RegExp(value, 'i')
   let searchFilterData = product.filter((item) => rgx.test(item.productName))
 
@@ -380,4 +379,24 @@ export function launch(product) {
     let searchCatalogValue = e.target.value
     searcgCatalogValue(searchCatalogValue, product)
   })
+}
+
+
+// regular expression of email
+function regEmail(email) {
+  let rgx = /^[a-zA-Z][0-9a-zA-Z_]{2,21}@[a-zA-Z]{2,12}\.[a-zA-Z]{2,12}/i;
+  return rgx.test(email);
+}
+
+
+// email verification
+export function isEmail(e) {
+  e.preventDefault()
+
+  if (regEmail(e.target.form[0].value)) {
+    alert('form submission')
+  }
+  else {
+    e.target.form[0].value = '* invalid email'
+  }
 }

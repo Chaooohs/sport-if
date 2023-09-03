@@ -146,7 +146,7 @@ input[type=checkbox]:checked + label {
   justify-self: center;
   -moz-column-gap: 4px;
        column-gap: 4px;
-  border: none;
+  border: 1px solid #a04956;
   background: #a04956;
   font-size: 18px;
   font-weight: 400;
@@ -497,6 +497,7 @@ footer {
   display: block;
   width: 260px;
   height: 43px;
+  color: #a04956;
 }
 .footer__input::-moz-placeholder {
   font-size: 18px;
@@ -515,6 +516,7 @@ footer {
 .footer__btn {
   width: 167px;
   height: 43px;
+  cursor: pointer;
 }
 
 .footer li {

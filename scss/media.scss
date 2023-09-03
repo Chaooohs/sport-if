@@ -337,6 +337,10 @@ $white: #fff;
     padding: 10px;
   }
 
+  .footer__input {
+    width: 100%;
+  }
+
   .footer__input::placeholder {
     text-align: center;
   }
@@ -537,25 +541,13 @@ $white: #fff;
     padding-left: 20px;
   }
 
-  .md__image-lg {
+  .md__image {
     margin-bottom: 60px;
   }
 
   .close {
     top: 40px;
   }
-
-  // .md-zoom__body {
-  //   display: block;
-  //   box-sizing: border-box;
-  //   padding-top: 60px;
-  // }
-
-  // .md-zoom__close {
-  //   position: static;
-  //   margin: 0 0 30px 20px;
-  // }
-
 
   // shop cart __________________________
 
