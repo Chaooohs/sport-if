@@ -313,13 +313,15 @@
     grid-row: 2/3;
     grid-column: 3/4;
     justify-self: flex-end;
-    align-self: flex-end;
+    align-self: center;
+    margin-right: 45px;
+    margin-top: 40px;
   }
   .sc__counter {
     grid-row: 2/3;
     grid-column: 3/4;
     justify-self: flex-end;
-    align-self: center;
+    align-self: flex-start;
     margin-right: 40px;
     width: 40px;
     height: 28px;
@@ -331,6 +333,8 @@
     grid-column: 3/4;
     justify-self: flex-end;
     align-self: flex-end;
+    margin-right: 45px;
+    margin-bottom: 25px;
   }
   .sc__cost {
     grid-row: 2/3;
@@ -439,9 +443,11 @@
   .sc__counter-add,
   .sc__counter-remove {
     width: 20px;
+    margin: 0 26px 0 0;
   }
   .sc__counter-remove {
     height: 6px;
+    align-self: flex-end;
   }
   .sc__counter {
     width: 30px;
