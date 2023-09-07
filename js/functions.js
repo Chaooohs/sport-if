@@ -15,7 +15,7 @@ export async function request(url) {
 // function of redirection to the product catalog
 export const redirectPage = (dataType) => {
   localStorage.setItem("__product__", JSON.stringify(dataType));
-  window.location.href = "./catalog/index.html";
+  window.location.href = "/catalog/index.html";
 }
 
 
@@ -35,6 +35,7 @@ export function callingRedirect(e) {
       break
   }
 }
+
 
 // mobile menu active
 export const menuBurger = () => {
@@ -213,7 +214,6 @@ function userColorFilter(product) {
     }
   })
 }
-
 
 
 // colors filter function for sidebar
