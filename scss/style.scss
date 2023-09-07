@@ -202,29 +202,6 @@ input[type="checkbox"]:checked+label {
   bottom: 4rem;
 }
 
-.breadcrumbs {
-  &__home {
-    width: 30px;
-  }
-
-  &__arrow {
-    width: 20px;
-    height: 24px;
-  }
-}
-
-.breadcrumbs ul {
-  display: flex;
-  align-items: flex-end;
-  gap: 16px;
-}
-
-.breadcrumbs-text {
-  font-size: 24px;
-  font-weight: 500;
-  color: $black;
-}
-
 /* #endregion */
 
 /* #region header */
@@ -625,8 +602,34 @@ footer {
   align-items: center;
   column-gap: 8.3%;
   box-sizing: border-box;
-  padding: 55px 0 24px;
+  padding: 60px 0 24px;
   background-color: $white;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+
+  &__home {
+    width: 30px;
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 26px;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 400;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__end {
+    font-weight: 500;
+  }
 }
 
 .catalog {

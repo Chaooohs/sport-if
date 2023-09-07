@@ -23,33 +23,33 @@ function outJson(json) {
   switch (productType) {
     case 'shorts':
       // breadcrumbs
-      el('.breadcrumbs-end').innerText = 'shorts'
+      el('.breadcrumbs__end').innerText = 'shorts'
       const shorts = typeFilter(json, "shorts")
       launch(shorts)
       break
     case 'pants':
-      el('.breadcrumbs-end').innerText = 'pants'
+      el('.breadcrumbs__end').innerText = 'pants'
       const pants = typeFilter(json, "pants");
       launch(pants)
       break
     case 'shirts':
-      el('.breadcrumbs-end').innerText = 'shirts'
+      el('.breadcrumbs__end').innerText = 'shirts'
       const shirts = typeFilter(json, "shirts");
       launch(shirts)
       break
     case 'accessories':
-      el('.breadcrumbs-end').innerText = 'accessories'
+      el('.breadcrumbs__end').innerText = 'accessories'
       const accessories = typeFilter(json, "accessories");
       launch(accessories)
       break
     case 'sale':
-      el('.breadcrumbs-end').innerText = 'sale'
+      el('.breadcrumbs__end').innerText = 'sale'
       const sale = typeFilter(json, "sale");
       launch(sale)
       break
     default:
       launch(productType)
-      el('.breadcrumbs-end').innerText = 'search'
+      el('.breadcrumbs__end').innerText = 'search'
       break
   }
 }
