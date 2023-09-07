@@ -1,5 +1,5 @@
 //===========================================================
-import { request, filter, launch, modalClose, callingRedirect, searchFilter, isEmail, menuBurger } from "./functions.js";
+import { request, launch, callingRedirect, searchFilter, menuBurger, typeFilter, modalClose, isEmail } from "./functions.js";
 
 const el = (selector) => document.querySelector(selector);
 const all = (selectorAll) => document.querySelectorAll(selectorAll);
@@ -24,27 +24,27 @@ function outJson(json) {
     case 'shorts':
       // breadcrumbs
       el('.breadcrumbs-end').innerText = 'shorts'
-      const shorts = filter(json, "productType", "shorts");
+      const shorts = typeFilter(json, "shorts")
       launch(shorts)
       break
     case 'pants':
       el('.breadcrumbs-end').innerText = 'pants'
-      const pants = filter(json, "productType", "pants");
+      const pants = typeFilter(json, "pants");
       launch(pants)
       break
     case 'shirts':
       el('.breadcrumbs-end').innerText = 'shirts'
-      const shirts = filter(json, "productType", "shirts");
+      const shirts = typeFilter(json, "shirts");
       launch(shirts)
       break
     case 'accessories':
       el('.breadcrumbs-end').innerText = 'accessories'
-      const accessories = filter(json, "productType", "accessories");
+      const accessories = typeFilter(json, "accessories");
       launch(accessories)
       break
     case 'sale':
       el('.breadcrumbs-end').innerText = 'sale'
-      const sale = filter(json, "productType", "sale");
+      const sale = typeFilter(json, "sale");
       launch(sale)
       break
     default:

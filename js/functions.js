@@ -15,7 +15,7 @@ export async function request(url) {
 // function of redirection to the product catalog
 export const redirectPage = (dataType) => {
   localStorage.setItem("__product__", JSON.stringify(dataType));
-  window.location.href = "../catalog/index.html";
+  window.location.href = "./catalog/index.html";
 }
 
 
@@ -54,6 +54,28 @@ export function filter(arr, prop, value) {
   }
 
   return result
+}
+
+
+// select option by type
+export function typeFilter(product, value) {
+  return product.filter((item) => {
+    return item.productType.includes(value)
+  })
+}
+
+// select option by size
+function sizeFilter(product, value) {
+  return product.filter((item) => {
+    return item.productSize.includes(+value)
+  })
+}
+
+// select option by color
+function colorFilter(product, value) {
+  return product.filter((item) => {
+    return item.productColor.includes(value)
+  })
 }
 
 
@@ -123,65 +145,75 @@ export function renderElement(item) {
 }
 
 
-// product color selection function
-let selectColor;
-
-export function colorsFiltering(e, catalog) {
-  let buttonC = e.target.closest('button');
-
-  if (!buttonC) return;
-
-  if (selectColor) selectColor.classList.remove('active')
-
-  selectColor = buttonC
-  selectColor.classList.add('active')
-
-  if (e.target.classList.contains('filter__subfilter_all')) {
-    pagination(catalog)
-  }
-  else {
-    let colors = filter(catalog, "productColor", e.target.dataset.color);
-
-    // if (colors[0] === undefined) {
-    //   console.warn(`not found`);
-    //   buttonC.disabled = true;
-    //   el(".main").innerHTML = `<h2 class="not-found">not found</h2>`;
-    //   return;
-    // }
-    pagination(colors)
-  }
-}
-
-
 // product size selection function
-let selectSize;
+function userSizeFilter(product) {
+  let size = []
+  let select;
 
-export function sizesFiltering(e, catalog) {
-  let buttonS = e.target.closest('button');
+  el('#openSize').addEventListener('click', (e) => {
+    let button = e.target.closest('button');
 
-  if (!buttonS) return;
+    if (!button) return;
+    if (select) select.classList.remove('active')
+  
+    select = button
+    select.classList.add('active')
 
-  if (selectSize) selectSize.classList.remove('active')
+    if (!e.target) return
+    if (e.target.classList.contains('filter__list')) return
 
-  selectSize = buttonS
-
-  selectSize.classList.add('active')
-
-  if (e.target.classList.contains('filter__subfilter_all')) {
-    pagination(catalog)
-  }
-  else {
-    let sizes = filter(catalog, "productSize", e.target.dataset.size);
-
-    // if (sizes[0] === undefined) {
-    //   console.warn(`not found`);
-    //   buttonS.disabled = true;
-    //   el(".main").innerHTML = `<h2 class="not-found">not found</h2>`;
-    //   return;
-    // }
-    pagination(sizes)
-  }
+    if (e.target.classList.contains('filter__subfilter_all')) {
+      pagination(product)
+      sizesFilter(product)
+      colorsFilter(product)
+      userColorFilter(product)
+      return
+    }
+    
+    if (e.target) {
+      size = sizeFilter(product, e.target.dataset.size)
+      pagination(size)
+      colorsFilter(size)
+      userColorFilter(size)
+      return
+    }
+  })
 }
+
+
+// product color selection function
+function userColorFilter(product) {
+  let color = []
+  let select;
+
+  el('#openColor').addEventListener('click', (e) => {
+    let button = e.target.closest('button');
+
+    if (!button) return;
+    if (select) select.classList.remove('active')
+  
+    select = button
+    select.classList.add('active')
+
+    if (!e.target) return
+    if (e.target.classList.contains('filter__list')) return
+
+    if (e.target.classList.contains('filter__subfilter_all')) {
+      pagination(product)
+      sizesFilter(product)
+      colorsFilter(product)
+      return
+    }
+
+    if (e.target.classList.contains('filter__subfilter_color')) {
+      color = colorFilter(product, e.target.dataset.color)
+      pagination(color)
+      sizesFilter(color)
+      return
+    }
+  })
+}
+
 
 
 // colors filter function for sidebar
@@ -359,21 +391,14 @@ export function searcgCatalogValue(value, product) {
 export function launch(product) {
   // output of product cards
   pagination(product)
-
-  // colors filter function for sidebar
-  colorsFilter(product);
-
-  // product color selection function
-  const filteringColor = (e) => colorsFiltering(e, product)
-  el('#openColor').addEventListener("click", filteringColor)
-
   // sizes filter function for sidebar
   sizesFilter(product);
-
+  // colors filter function for sidebar
+  colorsFilter(product);
   // product size selection function
-  const filteringSize = (e) => sizesFiltering(e, product)
-  el('#openSize').addEventListener("click", filteringSize)
-
+  userSizeFilter(product)
+  // product color selection function
+  userColorFilter(product)
   // search function in catalog
   el('.catalog__search-inp').addEventListener('input', (e) => {
     let searchCatalogValue = e.target.value
@@ -395,6 +420,7 @@ export function isEmail(e) {
 
   if (regEmail(e.target.form[0].value)) {
     alert('form submission')
+    e.target.form[0].value = ''
   }
   else {
     e.target.form[0].value = '* invalid email'
