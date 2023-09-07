@@ -106,6 +106,7 @@ export function pagination(arr) {
   }
 
   function showPage(item) {
+    if (item === undefined) return
 
     let active = el('.product-pagination_link.active')
 
@@ -156,7 +157,7 @@ function userSizeFilter(product) {
 
     if (!button) return;
     if (select) select.classList.remove('active')
-  
+
     select = button
     select.classList.add('active')
 
@@ -170,7 +171,7 @@ function userSizeFilter(product) {
       userColorFilter(product)
       return
     }
-    
+
     if (e.target) {
       size = sizeFilter(product, e.target.dataset.size)
       pagination(size)
@@ -184,7 +185,6 @@ function userSizeFilter(product) {
 
 // product color selection function
 function userColorFilter(product) {
-  let color = []
   let select;
 
   el('#openColor').addEventListener('click', (e) => {
@@ -192,7 +192,7 @@ function userColorFilter(product) {
 
     if (!button) return;
     if (select) select.classList.remove('active')
-  
+
     select = button
     select.classList.add('active')
 
@@ -206,6 +206,7 @@ function userColorFilter(product) {
       return
     }
 
+    let color = []
     if (e.target.classList.contains('filter__subfilter_color')) {
       color = colorFilter(product, e.target.dataset.color)
       pagination(color)
