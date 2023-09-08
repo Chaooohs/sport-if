@@ -147,7 +147,6 @@ function userSizeFilter(product) {
     }
 
     if (e.target) {
-      // let size = sizeFilter(product, e.target.dataset.size)
       let size = filter(product, "productSize", e.target.dataset.size)
       pagination(size)
       colorsFilter(size)
@@ -184,7 +183,6 @@ function userColorFilter(product) {
 
     if (e.target.classList.contains('filter__subfilter_color')) {
       let color = filter(product, "productColor", e.target.dataset.color)
-      // let color = filter(product, "productColor", e.target.dataset.color)
       pagination(color)
       // sizesFilter(color)
       return
