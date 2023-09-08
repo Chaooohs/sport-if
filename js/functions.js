@@ -46,36 +46,10 @@ export const menuBurger = () => {
 }
 
 
-// filter function
-export function filter(arr, prop, value) {
-  let result = []
-
-  for (let item of arr) {
-    if (String(item[prop]).includes(value)) result.push(item)
-  }
-
-  return result
-}
-
-
-// select option by type
-export function typeFilter(product, value) {
+// select option by filter
+export function filter(product, prop, value) {
   return product.filter((item) => {
-    return item.productType.includes(value)
-  })
-}
-
-// select option by size
-function sizeFilter(product, value) {
-  return product.filter((item) => {
-    return item.productSize.includes(+value)
-  })
-}
-
-// select option by color
-function colorFilter(product, value) {
-  return product.filter((item) => {
-    return item.productColor.includes(value)
+    return String(item[prop]).includes(value)
   })
 }
 
@@ -106,7 +80,7 @@ export function pagination(arr) {
   }
 
   function showPage(item) {
-    if (item === undefined) return
+    // if (item === undefined) return
 
     let active = el('.product-pagination_link.active')
 
@@ -149,7 +123,7 @@ export function renderElement(item) {
 
 // product size selection function
 function userSizeFilter(product) {
-  let size = []
+  // let size = []
   let select;
 
   el('#openSize').addEventListener('click', (e) => {
@@ -173,7 +147,8 @@ function userSizeFilter(product) {
     }
 
     if (e.target) {
-      size = sizeFilter(product, e.target.dataset.size)
+      // let size = sizeFilter(product, e.target.dataset.size)
+      let size = filter(product, "productSize", e.target.dataset.size)
       pagination(size)
       colorsFilter(size)
       userColorFilter(size)
@@ -185,6 +160,7 @@ function userSizeFilter(product) {
 
 // product color selection function
 function userColorFilter(product) {
+  // let color = []
   let select;
 
   el('#openColor').addEventListener('click', (e) => {
@@ -201,16 +177,16 @@ function userColorFilter(product) {
 
     if (e.target.classList.contains('filter__subfilter_all')) {
       pagination(product)
-      sizesFilter(product)
+      // sizesFilter(product)
       colorsFilter(product)
       return
     }
 
-    let color = []
     if (e.target.classList.contains('filter__subfilter_color')) {
-      color = colorFilter(product, e.target.dataset.color)
+      let color = filter(product, "productColor", e.target.dataset.color)
+      // let color = filter(product, "productColor", e.target.dataset.color)
       pagination(color)
-      sizesFilter(color)
+      // sizesFilter(color)
       return
     }
   })
