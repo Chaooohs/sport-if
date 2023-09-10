@@ -477,6 +477,7 @@ footer {
   display: block;
   width: 260px;
   height: 43px;
+  font-size: 22px;
   color: #a04956;
 }
 .footer__input::-moz-placeholder {
