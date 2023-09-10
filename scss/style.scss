@@ -801,6 +801,7 @@ footer {
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-rows: max-content;
   gap: 20px;
 }
 
@@ -811,7 +812,6 @@ footer {
   align-items: center;
   row-gap: 5px;
 
-  height: fit-content;
   box-sizing: border-box;
   padding: 24px 24px;
   background-color: $white;
