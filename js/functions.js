@@ -374,7 +374,7 @@ export function launch(product) {
 
 // regular expression of email
 function regEmail(email) {
-  let rgx = /^[a-zA-Z0-9_.]+@[a-z]+\.[a-z]+[a-z.]*$/ig;
+  let rgx = /^[a-zA-Z0-9_.-]+@[a-z]+\.[a-z]+[a-z.]*$/ig;
   return rgx.test(email);
 }
 
