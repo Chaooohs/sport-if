@@ -1054,7 +1054,7 @@ footer {
 }
 .sc__main {
   box-sizing: border-box;
-  padding-top: 60px;
+  padding: 60px 0 92px;
 }
 .sc__ch {
   font-size: 24px;
