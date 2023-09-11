@@ -63,6 +63,7 @@ el('.header__nav').addEventListener('click', callingRedirect)
 all(".filter__header").forEach((item) => {
   item.addEventListener("click", function (event) {
     this.nextElementSibling.classList.toggle("active");
+    this.querySelector('.filter__icon').classList.toggle("active")
   });
 });
 

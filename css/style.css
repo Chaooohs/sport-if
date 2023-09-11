@@ -608,6 +608,11 @@ footer {
 }
 .filter__icon {
   width: 20px;
+  transition: all 0.1s linear;
+}
+.filter__icon.active {
+  transform: scaleY(-1);
+  transition: all 0.1s linear;
 }
 .filter__content {
   display: none;
@@ -827,11 +832,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s linear;
 }
 .md__block-plus.hide {
   display: none;
-  transition: all 0.5s linear;
 }
 .md__image-plus {
   width: 60px;

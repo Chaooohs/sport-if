@@ -697,6 +697,12 @@ footer {
 
   &__icon {
     width: 20px;
+    transition: all .1s linear;
+  }
+
+  &__icon.active {
+    transform: scaleY(-1);
+    transition: all .1s linear;
   }
 
   &__content {
@@ -964,12 +970,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s linear;
   }
 
   &__block-plus.hide {
     display: none;
-    transition: all .5s linear;
   }
 
   &__image-plus {
