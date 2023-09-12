@@ -662,7 +662,6 @@ footer {
 
 .catalog-outer {
   background-color: $SuperSilverColor;
-
 }
 
 .filter {
@@ -721,14 +720,6 @@ footer {
 
   &__flex input {
     display: none;
-  }
-
-  &__content {
-    display: none;
-  }
-
-  &__content.active {
-    display: block;
   }
 
   &__subfilter {

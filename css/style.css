@@ -628,12 +628,6 @@ footer {
 .filter__flex input {
   display: none;
 }
-.filter__content {
-  display: none;
-}
-.filter__content.active {
-  display: block;
-}
 .filter__subfilter_all {
   width: 100%;
   height: 40px;
